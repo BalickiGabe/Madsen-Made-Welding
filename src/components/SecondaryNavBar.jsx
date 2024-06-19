@@ -2,7 +2,7 @@ import React from "react";
 import { Box, ButtonGroup, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function SecondaryNavBar() {
+const SecondaryNavBar = ({ buttons }) => {
   const imageUrl = process.env.PUBLIC_URL + "/images/justLogo.jpeg";
   const navigate = useNavigate();
 
@@ -36,34 +36,23 @@ export default function SecondaryNavBar() {
           flex: 1,
           display: "flex",
           justifyContent: { sm: "center", lg: "flex-start" },
-
           marginTop: { sm: "1rem", lg: "7.5rem" },
         }}
       >
         <ButtonGroup variant="contained" aria-label="Basic button group">
-          <Button
-            onClick={() => navigate("/")}
-            sx={{ fontSize: { sm: "1.5rem", lg: ".85rem" } }}
-          >
-            Home
-          </Button>
-          <Button sx={{ fontSize: { sm: "1.5rem", lg: ".85rem" } }}>
-            About
-          </Button>
-          <Button sx={{ fontSize: { sm: "1.5rem", lg: ".85rem" } }}>
-            Gallery
-          </Button>
-          <Button sx={{ fontSize: { sm: "1.5rem", lg: ".85rem" } }}>
-            Contact
-          </Button>
-          <Button sx={{ fontSize: { sm: "1.5rem", lg: ".85rem" } }}>
-            Our Process
-          </Button>
-          <Button sx={{ fontSize: { sm: "1.5rem", lg: ".85rem" } }}>
-            Our Family
-          </Button>
+          {buttons.map((button) => (
+            <Button
+              key={button.label}
+              onClick={() => navigate(button.route)}
+              sx={{ fontSize: { sm: "1.5rem", lg: ".85rem" } }}
+            >
+              {button.label}
+            </Button>
+          ))}
         </ButtonGroup>
       </Box>
     </Box>
   );
-}
+};
+
+export default SecondaryNavBar;

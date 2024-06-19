@@ -6,9 +6,18 @@ import Footer from "../Footer";
 export default function Services() {
   const imageUrl = process.env.PUBLIC_URL + "/images/map.png";
   const jakeWelding = process.env.PUBLIC_URL + "/images/jake%20welding.jpg";
+
+  const buttons = [
+    { label: "Home", route: "/" },
+    { label: "About", route: "/about" },
+    { label: "Gallery", route: "/gallery" },
+    { label: "Contact", route: "/contact" },
+    { label: "Our Process", route: "/process" },
+    { label: "Our Family", route: "/family" },
+  ];
   return (
     <Box>
-      <SecondaryNavBar />
+      <SecondaryNavBar buttons={buttons} />
       <Box
         sx={{
           background: "#b29e85",
@@ -27,7 +36,7 @@ export default function Services() {
           Services
         </Typography>
       </Box>
-      {/* Service box 1 */}
+      {/* Residential */}
       <Box
         sx={{
           display: "flex",
@@ -95,7 +104,7 @@ export default function Services() {
           </Typography>
         </Box>
       </Box>
-      {/* Service box 2 */}
+      {/* Commercial */}
       <Box
         sx={{
           display: "flex",
@@ -163,7 +172,7 @@ export default function Services() {
           </Typography>
         </Box>
       </Box>
-      {/* service box 3 */}
+      {/* Repairs */}
       <Box
         sx={{
           display: "flex",
@@ -231,7 +240,7 @@ export default function Services() {
           </Typography>
         </Box>
       </Box>
-      {/* The madson made difference */}
+      {/* Transforming Spaces with Madsen Made */}
       <Box
         sx={{
           display: "flex",

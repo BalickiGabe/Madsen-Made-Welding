@@ -1,6 +1,10 @@
+import React from "react";
 import { Box, ButtonGroup, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{
@@ -13,11 +17,27 @@ export default function NavBar() {
       }}
     >
       <ButtonGroup variant="text" aria-label="Basic button group">
-        <Button>About</Button>
-        <Button>Services</Button>
-        <Button>Gallery</Button>
-        <Button>Contact</Button>
-        <Button>Our Process</Button>
+        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
+          About
+        </Button>
+        <Button
+          onClick={() => navigate("/Services")}
+          sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}
+        >
+          Services
+        </Button>
+        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
+          Gallery
+        </Button>
+        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
+          Contact
+        </Button>
+        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
+          Our Process
+        </Button>
+        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
+          Our Family
+        </Button>
       </ButtonGroup>
     </Box>
   );

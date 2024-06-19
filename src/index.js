@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./components/Home";
+import Home from "./components/Pages/Home";
+import Services from "./components/Pages/Services";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
 
@@ -10,11 +11,36 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <div>404 Not Found</div>,
   },
+  {
+    path: "/Services",
+    element: <Services />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  // {
+  //   path: "/",
+  //   element: <Gallary />,
+  //   errorElement: <div>404 Not Found</div>,
+  // },
+  // {
+  //   path: "/",
+  //   element: <Contact />,
+  //   errorElement: <div>404 Not Found</div>,
+  // },
+  // {
+  //   path: "/",
+  //   element: <OurProcess />,
+  //   errorElement: <div>404 Not Found</div>,
+  // },
+  // {
+  //   path: "/",
+  //   element: <OurFamily />,
+  //   errorElement: <div>404 Not Found</div>,
+  // },
 ]);
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["roboto", "sans-serif"].join(","),
+    fontFamily: ["Nunito", "sans-serif"].join(","),
     h1: {
       fontSize: "3rem",
       fontWeight: 600,
@@ -31,7 +57,7 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#b29e85", //beige
-      dark: "#212121", //dark background
+      dark: "tan", //dark background
       contrastText: "#fff",
     },
   },

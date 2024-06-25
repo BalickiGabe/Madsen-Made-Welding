@@ -17,7 +17,10 @@ export default function NavBar() {
       }}
     >
       <ButtonGroup variant="text" aria-label="Basic button group">
-        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
+        <Button
+          onClick={() => navigate("/About")}
+          sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}
+        >
           About
         </Button>
         <Button
@@ -26,17 +29,25 @@ export default function NavBar() {
         >
           Services
         </Button>
-        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
+        <Button
+          onClick={() => navigate("/Gallery")}
+          sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}
+        >
           Gallery
         </Button>
-        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
-          Contact
-        </Button>
-        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
+
+        <Button
+          onClick={() => navigate("/OurProcess")}
+          sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}
+        >
           Our Process
         </Button>
-        <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
-          Our Family
+
+        <Button
+          onClick={() => navigate("/Contact")}
+          sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}
+        >
+          Contact
         </Button>
       </ButtonGroup>
     </Box>

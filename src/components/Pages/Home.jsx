@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import { Box } from "@mui/material";
-import About from "../About";
+import AboutHome from "../AboutHome";
 import Footer from "../Footer";
 import Testimonial from "../Testimonials";
 import BehindWelding from "../BehindWelding";
@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <BehindWelding />
       <Testimonial />
-      <About />
+      <AboutHome />
       <Footer />
     </Box>
   );

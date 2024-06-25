@@ -1,10 +1,17 @@
 import React from "react";
 import { Box, ButtonGroup, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
-const SecondaryNavBar = ({ buttons }) => {
+export default function SecondaryNavBar() {
   const imageUrl = process.env.PUBLIC_URL + "/images/justLogo.jpeg";
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const getButtonStyle = (path) => ({
+    fontSize: { sm: "1.75rem", lg: ".85rem" },
+    backgroundColor: location.pathname === path ? "white" : "default",
+    color: location.pathname === path ? "black" : "defualt",
+  });
 
   return (
     <Box
@@ -16,6 +23,7 @@ const SecondaryNavBar = ({ buttons }) => {
         marginTop: "2rem",
         padding: "1rem",
         paddingBottom: "3rem",
+        borderBottom: "1px solid #ccc",
       }}
     >
       <Box
@@ -40,19 +48,62 @@ const SecondaryNavBar = ({ buttons }) => {
         }}
       >
         <ButtonGroup variant="contained" aria-label="Basic button group">
-          {buttons.map((button) => (
-            <Button
-              key={button.label}
-              onClick={() => navigate(button.route)}
-              sx={{ fontSize: { sm: "1.5rem", lg: ".85rem" } }}
-            >
-              {button.label}
-            </Button>
-          ))}
+          <Button
+            onClick={() => navigate("/")}
+            sx={{
+              ...getButtonStyle("/"),
+              fontSize: { sm: "1.4rem", lg: ".85rem" },
+            }}
+          >
+            Home
+          </Button>
+          <Button
+            onClick={() => navigate("/About")}
+            sx={{
+              ...getButtonStyle("/About"),
+              fontSize: { sm: "1.4rem", lg: ".85rem" },
+            }}
+          >
+            About
+          </Button>
+          <Button
+            onClick={() => navigate("/Services")}
+            sx={{
+              ...getButtonStyle("/Services"),
+              fontSize: { sm: "1.4rem", lg: ".85rem" },
+            }}
+          >
+            Services
+          </Button>
+          <Button
+            onClick={() => navigate("/Gallery")}
+            sx={{
+              ...getButtonStyle("/Gallery"),
+              fontSize: { sm: "1.4rem", lg: ".85rem" },
+            }}
+          >
+            Gallery
+          </Button>
+          <Button
+            onClick={() => navigate("/Contact")}
+            sx={{
+              ...getButtonStyle("/Contact"),
+              fontSize: { sm: "1.4rem", lg: ".85rem" },
+            }}
+          >
+            Contact
+          </Button>
+          <Button
+            onClick={() => navigate("/OurProcess")}
+            sx={{
+              ...getButtonStyle("/OurProcess"),
+              fontSize: { sm: "1.4rem", lg: ".85rem" },
+            }}
+          >
+            Our Process
+          </Button>
         </ButtonGroup>
       </Box>
     </Box>
   );
-};
-
-export default SecondaryNavBar;
+}

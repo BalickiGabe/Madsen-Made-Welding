@@ -14,23 +14,6 @@ export default function Footer() {
         borderRadius: { sm: "6px", lg: "4px" },
       }}
     >
-      <Box>
-        <ButtonGroup aria-label="Basic button group">
-          <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
-            Services
-          </Button>
-          <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
-            Contact
-          </Button>
-          <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
-            Our Process
-          </Button>
-          <Button sx={{ fontSize: { sm: "1.75rem", lg: ".85rem" } }}>
-            Gallary
-          </Button>
-        </ButtonGroup>
-      </Box>
-
       <Box
         sx={{
           display: "flex",

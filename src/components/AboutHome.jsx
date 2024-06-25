@@ -3,7 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 import Carousel from "./Carousel";
 import { useNavigate } from "react-router-dom";
 
-export default function About() {
+export default function AboutHome() {
   const navigate = useNavigate();
   return (
     <Box
@@ -44,6 +44,16 @@ export default function About() {
           employ the latest technologies and techniques to ensure that every
           project is a success. Contact us today to learn more about how we can
           help bring your vision to life.
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{ marginBottom: "2rem", borderTop: "1px solid #ccc" }}
+        >
+          As an in-demand welding company, we are committed to two main
+          principles: providing the highest level of service possible and
+          ensuring that our prices remain competitive and affordable. This focus
+          on price and service is why so many of our clients are so loyal to us
+          and are happy to recommend us to others!
         </Typography>
         <Button variant="contained" onClick={() => navigate("/Services")}>
           Explore Services

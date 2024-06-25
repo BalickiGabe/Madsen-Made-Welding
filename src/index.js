@@ -2,6 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Home from "./components/Pages/Home";
 import Services from "./components/Pages/Services";
+import Contact from "./components/Pages/Contact";
+import Gallery from "./components/Pages/Gallary";
+import About from "./components/Pages/About";
+
+import OurProcess from "./components/Pages/OurProcess";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
 
@@ -16,26 +21,27 @@ const router = createBrowserRouter([
     element: <Services />,
     errorElement: <div>404 Not Found</div>,
   },
-  // {
-  //   path: "/",
-  //   element: <Gallary />,
-  //   errorElement: <div>404 Not Found</div>,
-  // },
-  // {
-  //   path: "/",
-  //   element: <Contact />,
-  //   errorElement: <div>404 Not Found</div>,
-  // },
-  // {
-  //   path: "/",
-  //   element: <OurProcess />,
-  //   errorElement: <div>404 Not Found</div>,
-  // },
-  // {
-  //   path: "/",
-  //   element: <OurFamily />,
-  //   errorElement: <div>404 Not Found</div>,
-  // },
+  {
+    path: "/Gallery",
+    element: <Gallery />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/Contact",
+    element: <Contact />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/OurProcess",
+    element: <OurProcess />,
+    errorElement: <div>404 Not Found</div>,
+  },
+
+  {
+    path: "/About",
+    element: <About />,
+    errorElement: <div>404 Not Found</div>,
+  },
 ]);
 
 const theme = createTheme({

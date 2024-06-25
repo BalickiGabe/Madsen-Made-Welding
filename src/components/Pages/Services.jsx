@@ -7,35 +7,16 @@ export default function Services() {
   const imageUrl = process.env.PUBLIC_URL + "/images/map.png";
   const jakeWelding = process.env.PUBLIC_URL + "/images/jake%20welding.jpg";
 
-  const buttons = [
-    { label: "Home", route: "/" },
-    { label: "About", route: "/about" },
-    { label: "Gallery", route: "/gallery" },
-    { label: "Contact", route: "/contact" },
-    { label: "Our Process", route: "/process" },
-    { label: "Our Family", route: "/family" },
-  ];
   return (
     <Box>
-      <SecondaryNavBar buttons={buttons} />
+      <SecondaryNavBar />
       <Box
         sx={{
           background: "#b29e85",
           borderRadius: "3px",
           boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.3)",
         }}
-      >
-        <Typography
-          variant="body"
-          sx={{
-            fontSize: { sm: "2rem", lg: "3rem" },
-            marginLeft: "3rem",
-            color: "white",
-          }}
-        >
-          Services
-        </Typography>
-      </Box>
+      ></Box>
       {/* Residential */}
       <Box
         sx={{
@@ -184,6 +165,7 @@ export default function Services() {
           paddingBottom: "3rem",
           backgroundColor: "white",
           borderRadius: { sm: "6px", lg: "4px" },
+          borderBottom: "4px solid #ccc",
         }}
       >
         <Box
@@ -251,7 +233,7 @@ export default function Services() {
           boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.3)",
           borderRadius: { sm: "6px", lg: "4px" },
           overflow: "hidden",
-          marginTop: "2rem",
+          marginTop: "5rem",
           bgcolor: "#b29e85",
           color: "White",
           padding: "2rem",
@@ -285,7 +267,7 @@ export default function Services() {
           padding: "1rem",
           paddingBottom: "3rem",
           backgroundColor: "white",
-          boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.3)",
+          borderTop: "4px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
       >
@@ -320,13 +302,15 @@ export default function Services() {
             color: "black",
           }}
         >
+          <Typography variant="h4" gutterBottom sx={{ color: "black" }}>
+            We are proud to serve the Colorado Front Range
+          </Typography>
           <Typography
             variant="h5"
             gutterBottom
             sx={{ color: "black", borderBottom: "1px solid #ccc" }}
           >
-            At Madsen Made, we are proud to serve the Colorado Front Range, from
-            Boulder to Castle Rock and everywhere in between.
+            From Boulder to Castle Rock and everywhere in between
           </Typography>
           <Typography variant="h5" gutterBottom sx={{ color: "black" }}>
             Cities and Towns We Serve

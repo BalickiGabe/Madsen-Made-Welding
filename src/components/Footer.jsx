@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, ButtonGroup, TextField, Button } from "@mui/material";
+import { Box, Typography, TextField, Button } from "@mui/material";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -22,6 +22,7 @@ export default function Footer() {
           marginTop: "32px",
           borderTop: "1px solid #ccc",
           paddingTop: "16px",
+          color: "black",
         }}
       >
         <Box>

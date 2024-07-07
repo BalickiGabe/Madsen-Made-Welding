@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import SecondaryNavBar from "../SecondaryNavBar";
 import Footer from "../Footer";
 
@@ -16,7 +16,7 @@ export default function About() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "white",
+          backgroundColor: "#e8e8dc",
           borderRadius: { sm: "6px", lg: "4px" },
           borderBottom: "4px solid #ccc",
         }}

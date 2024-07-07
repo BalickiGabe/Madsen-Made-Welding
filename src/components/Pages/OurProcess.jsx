@@ -31,15 +31,16 @@ export default function OurProcess() {
       <SecondaryNavBar />
       <Box
         sx={{
-          backgroundColor: "white",
           color: "black",
           minHeight: "100vh",
           py: 4,
+          backgroundColor: "#e8e8dc",
+          paddingBottom: "10rem",
         }}
       >
         <Container>
           <Typography
-            variant="h1"
+            variant="h2"
             align="left"
             gutterBottom
             sx={{ borderBottom: "1px solid #ccc" }}

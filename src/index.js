@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import Home from "./components/Pages/Home";
 import Services from "./components/Pages/Services";
 import Contact from "./components/Pages/Contact";
-import Gallery from "./components/Pages/Gallary";
+import Gallery from "./components/Pages/Gallery/Gallery";
 import About from "./components/Pages/About";
 
 import OurProcess from "./components/Pages/OurProcess";

@@ -85,15 +85,6 @@ export default function SecondaryNavBar() {
             Gallery
           </Button>
           <Button
-            onClick={() => navigate("/Contact")}
-            sx={{
-              ...getButtonStyle("/Contact"),
-              fontSize: { sm: "1.4rem", lg: ".85rem" },
-            }}
-          >
-            Contact
-          </Button>
-          <Button
             onClick={() => navigate("/OurProcess")}
             sx={{
               ...getButtonStyle("/OurProcess"),
@@ -101,6 +92,15 @@ export default function SecondaryNavBar() {
             }}
           >
             Our Process
+          </Button>
+          <Button
+            onClick={() => navigate("/Contact")}
+            sx={{
+              ...getButtonStyle("/Contact"),
+              fontSize: { sm: "1.4rem", lg: ".85rem" },
+            }}
+          >
+            Contact
           </Button>
         </ButtonGroup>
       </Box>

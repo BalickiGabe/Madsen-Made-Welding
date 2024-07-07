@@ -60,28 +60,28 @@ export default function Gallery() {
       >
         <GalleryCard
           image="/images/jake%20welding.jpg"
-          title="Title Here"
-          body="Body text here. This is a description or content area."
+          title="Cable Railing "
+          body="A modern and sleek look while providing unobstructed views"
         />
         <GalleryCard
           image="/images/jake%20welding.jpg"
-          title="Title Here"
-          body="Body text here. This is a description or content area."
+          title="Steel & Wood Railings "
+          body="Ideal for their sturdy construction and classic, warm aesthetic"
         />
         <GalleryCard
           image="/images/jake%20welding.jpg"
-          title="Title Here"
-          body="Body text here. This is a description or content area."
+          title="Deck & Outdoor Railings"
+          body="Create a secure environment while enhancing the beauty of your outdoor space"
         />
         <GalleryCard
           image="/images/jake%20welding.jpg"
-          title="Title Here"
-          body="Body text here. This is a description or content area."
+          title="Baby/Animal Gates"
+          body="Provide safety and peace of mind, ensure a secure environment for your loved ones"
         />
         <GalleryCard
           image="/images/jake%20welding.jpg"
-          title="Title Here"
-          body="Body text here. This is a description or content area."
+          title="Custom Projects"
+          body="Creating unique pieces that reflect your personal style and needs"
         />
       </Box>
       <Footer />

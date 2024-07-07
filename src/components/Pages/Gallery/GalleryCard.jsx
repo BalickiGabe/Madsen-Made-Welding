@@ -25,14 +25,21 @@ export default function GalleryCard({ image, title, body }) {
             gutterBottom
             variant="h4"
             component="div"
-            sx={{ fontSize: { sm: "4rem", md: "1.9rem", lg: "2rem" } }}
+            sx={{
+              fontSize: { sm: "4rem", md: "1.9rem", lg: "2rem" },
+              borderBottom: "1px solid black",
+              textTransform: "capitalize",
+            }}
           >
             {title}
           </Typography>
           <Typography
             variant="body"
             color="black"
-            sx={{ fontSize: { sm: "15px", md: "1.1rem", lg: "1.3rem" } }}
+            sx={{
+              fontSize: { sm: "15px", md: "1.1rem", lg: "1.2rem" },
+              textTransform: "none",
+            }}
           >
             {body}
           </Typography>

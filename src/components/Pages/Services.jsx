@@ -51,6 +51,7 @@ export default function Services() {
               marginTop: "3rem",
               paddingTop: "8rem",
               marginLeft: "1rem",
+              marginRight: "1rem",
             }}
           />
         </Box>
@@ -64,9 +65,13 @@ export default function Services() {
           }}
         >
           <Typography
-            variant="h3"
+            variant="h4"
             gutterBottom
-            sx={{ color: "black", borderBottom: "1px solid #ccc" }}
+            sx={{
+              color: "black",
+              borderBottom: "1px solid #ccc",
+              fontSize: { sm: "2.5rem", lg: "3rem" },
+            }}
           >
             Residential
           </Typography>
@@ -76,7 +81,7 @@ export default function Services() {
             sx={{
               color: "black",
 
-              fontSize: { sm: "1rem", lg: "1.2rem" },
+              fontSize: { xs: "1.7rem", sm: "1.7rem", lg: "1.5rem" },
               marginTop: "3rem",
             }}
           >
@@ -119,6 +124,7 @@ export default function Services() {
               marginTop: "3rem",
               paddingTop: "8rem",
               marginLeft: "1rem",
+              marginRight: "1rem",
             }}
           />
         </Box>
@@ -132,9 +138,13 @@ export default function Services() {
           }}
         >
           <Typography
-            variant="h3"
+            variant="h4"
             gutterBottom
-            sx={{ color: "black", borderBottom: "1px solid #ccc" }}
+            sx={{
+              color: "black",
+              borderBottom: "1px solid #ccc",
+              fontSize: { sm: "2.5rem", lg: "3rem" },
+            }}
           >
             Commercial
           </Typography>
@@ -144,7 +154,7 @@ export default function Services() {
             sx={{
               color: "black",
 
-              fontSize: { sm: "1rem", lg: "1.2rem" },
+              fontSize: { xs: "1.7rem", sm: "1.7rem", lg: "1.5rem" },
               marginTop: "3rem",
             }}
           >
@@ -160,13 +170,11 @@ export default function Services() {
           flexDirection: { sm: "column", lg: "row" },
           justifyContent: "space-between",
           marginTop: "2rem",
-          marginBottom: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
           backgroundColor: "#e8e8dc",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
-          borderBottom: "4px solid #ccc",
         }}
       >
         <Box
@@ -189,6 +197,7 @@ export default function Services() {
               marginTop: "3rem",
               paddingTop: "8rem",
               marginLeft: "1rem",
+              marginRight: "1rem",
             }}
           />
         </Box>
@@ -202,9 +211,13 @@ export default function Services() {
           }}
         >
           <Typography
-            variant="h3"
+            variant="h4"
             gutterBottom
-            sx={{ color: "black", borderBottom: "1px solid #ccc" }}
+            sx={{
+              color: "black",
+              borderBottom: "1px solid #ccc",
+              fontSize: { sm: "2.5rem", lg: "3rem" },
+            }}
           >
             Repairs
           </Typography>
@@ -214,7 +227,7 @@ export default function Services() {
             sx={{
               color: "black",
 
-              fontSize: { sm: "1rem", lg: "1.2rem" },
+              fontSize: { xs: "1.7rem", sm: "1.7rem", lg: "1.5rem" },
               marginTop: "3rem",
             }}
           >

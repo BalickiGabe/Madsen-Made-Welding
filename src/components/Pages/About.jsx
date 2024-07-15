@@ -16,6 +16,7 @@ export default function About() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
+
           backgroundColor: "#e8e8dc",
           borderRadius: { sm: "6px", lg: "4px" },
           borderBottom: "4px solid #ccc",
@@ -35,7 +36,10 @@ export default function About() {
           </Typography>
           <Typography
             variant="h6"
-            sx={{ marginBottom: "2rem", borderTop: "1px solid #ccc" }}
+            sx={{
+              marginBottom: "2rem",
+              borderTop: "1px solid #ccc",
+            }}
           >
             We started Madsen Made in 2021, hoping to be able to gain the
             financial independence to start a family. With the help of our

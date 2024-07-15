@@ -81,7 +81,7 @@ export default function Gallery() {
         <GalleryCard
           image="/images/jake%20welding.jpg"
           title="Custom Projects"
-          body="Creating unique pieces that reflect your personal style and needs"
+          body="Create unique pieces that reflect your personal style and needs"
         />
       </Box>
       <Footer />

@@ -9,17 +9,17 @@ export default function Header() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-end",
+        justifyContent: "flex-start",
         borderRadius: { sm: "6px", lg: "4px" },
         backgroundColor: "white",
         width: "100%",
 
-        backgroundSize: "30% auto",
-        backgroundPosition: "center",
+        backgroundSize: "30rem",
+        backgroundPosition: "left",
         backgroundRepeat: "no-repeat",
-        height: { sm: "30rem", lg: "27rem" },
-        backgroundImage: `url(${imageUrl})`,
+        height: { sm: "30rem", lg: "6rem" },
         overflow: "hidden",
+        mt: "5rem",
       }}
     >
       <NavBar />

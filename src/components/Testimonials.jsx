@@ -1,7 +1,6 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import SwipeableViews from "react-swipeable-views";
@@ -11,16 +10,16 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const testimonials = [
   {
-    text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."   - Customer`,
+    text: `"We just had Jake and his team replace our old stair rails with new, custom made rails that are absolutely beautiful. He was really good about checking with us to make sure that the colors and configuration were correct. And they did the whole job themselves, no need to bring in any other contractors to do drywall repairs or painting."   - Phil`,
   },
   {
-    text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."   - Customer`,
+    text: `"We recently had a stair railing welded and installed, and we couldn't be happier with both the final product and the entire process. From the initial consultation to the completion of the project, everything was smooth and stress-free. Jake was professional, punctual, and highly skilled. The railing has truly transformed the look of our staircase. We highly recommend their services. Thank you for a job well done!"   - Jeff`,
   },
   {
-    text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."   - Customer`,
+    text: `"Jake and Alex were great to work with! I have a remodel project that is not that straightforward and he was so patient and willing to do whatever necessary in a timely and professional manner. I would definitely use him again and highly recommend them!!"   - Donna`,
   },
   {
-    text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."   - Customer`,
+    text: `"This guy does amazing work. Jake’s designs and craftsmanship are pure perfection!  In addition, they are amazing to work with!  I highly recommend!"   - Jami`,
   },
 ];
 
@@ -39,61 +38,78 @@ export default function Testimonial() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        width: { sm: 600, lg: 1000 },
-        margin: "auto",
-        boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.3)",
-        borderRadius: { sm: "6px", lg: "4px" },
-        overflow: "hidden",
-        marginTop: "2rem",
+        justifyContent: "center", // Center vertically
+        height: "30rem",
         bgcolor: "#b29e85",
-        color: "White",
-        padding: "2rem",
+        color: "white",
       }}
     >
-      <Typography variant="h5" sx={{ marginBottom: "1rem", color: "white" }}>
-        TESTIMONIALS
-      </Typography>
-      <AutoPlaySwipeableViews
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-      >
-        {testimonials.map((testimonial, index) => (
-          <div key={index}>
-            {Math.abs(activeStep - index) <= 2 ? (
-              <Paper
-                elevation={0}
-                sx={{
-                  padding: "1rem",
-                  bgcolor: "transparent",
-                  color: "#fff",
-                }}
-              >
-                <Typography>{testimonial.text}</Typography>
-              </Paper>
-            ) : null}
-          </div>
-        ))}
-      </AutoPlaySwipeableViews>
-
       <Box
-        sx={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}
+        sx={{
+          maxWidth: "70rem",
+          margin: "auto",
+          alignItems: "center",
+          padding: "2rem",
+
+          overflow: "hidden",
+        }}
       >
-        {Array.from({ length: maxSteps }, (_, index) => (
-          <Box
-            key={index}
-            sx={{
-              width: 12,
-              height: 12,
-              borderRadius: "50%",
-              backgroundColor: activeStep === index ? "tan" : "#fff",
-              margin: "0 4px",
-              cursor: "pointer",
-            }}
-            onClick={() => handleStepChange(index)}
-          />
-        ))}
+        <Typography
+          variant="h3"
+          sx={{ marginBottom: "1rem", textAlign: "center" }}
+        >
+          Testimonials
+        </Typography>
+        <AutoPlaySwipeableViews
+          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+          index={activeStep}
+          onChangeIndex={handleStepChange}
+          enableMouseEvents
+          interval={5500}
+        >
+          {testimonials.map((testimonial, index) => (
+            <div key={index}>
+              {Math.abs(activeStep - index) <= 2 ? (
+                <Paper
+                  elevation={0}
+                  sx={{
+                    padding: "1rem",
+                    bgcolor: "transparent",
+                    color: "#fff",
+                    textAlign: "center", // Center text horizontally
+                  }}
+                >
+                  <Typography variant="body1" sx={{}}>
+                    {testimonial.text}
+                  </Typography>
+                </Paper>
+              ) : null}
+            </div>
+          ))}
+        </AutoPlaySwipeableViews>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "1rem",
+          }}
+        >
+          {Array.from({ length: maxSteps }, (_, index) => (
+            <Box
+              key={index}
+              sx={{
+                width: 12,
+                height: 12,
+                borderRadius: "50%",
+                backgroundColor: activeStep === index ? "tan" : "#fff",
+                margin: "0 4px",
+                cursor: "pointer",
+              }}
+              onClick={() => handleStepChange(index)}
+            />
+          ))}
+        </Box>
       </Box>
     </Box>
   );

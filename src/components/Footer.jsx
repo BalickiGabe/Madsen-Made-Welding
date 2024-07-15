@@ -26,9 +26,9 @@ export default function Footer() {
         }}
       >
         <Box>
-          <Typography>Info@MadsenMade.com</Typography>
-          <Typography>(123) 456-7890</Typography>
-          <Typography>Denver, Colorado</Typography>
+          <Typography variant="body2">Info@MadsenMade.com</Typography>
+          <Typography variant="body2">(123) 456-7890</Typography>
+          <Typography variant="body2">Denver, Colorado</Typography>
         </Box>
         <Box>
           <Typography>Sign up for our newsletter</Typography>
@@ -60,7 +60,7 @@ export default function Footer() {
           paddingTop: "16px",
         }}
       >
-        <Typography>
+        <Typography variant="body3">
           © {year} Madsen Made Welding and Fabrication. All rights reserved.
         </Typography>
       </Box>

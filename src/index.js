@@ -46,24 +46,32 @@ const router = createBrowserRouter([
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["Nunito", "sans-serif"].join(","),
+    fontFamily: ["Montserrat", "sans-serif"].join(","),
     h1: {
       fontSize: "3rem",
       fontWeight: 600,
     },
     h2: {
-      fontSize: "1.75rem",
+      fontSize: "2rem",
       fontWeight: 600,
     },
     h3: {
       fontSize: "1.5rem",
       fontWeight: 600,
     },
+    body1: {
+      fontSize: "1.3rem",
+      fontWeight: 500,
+    },
+    body2: {
+      fontSize: "1.3rem",
+      fontWeight: 500,
+    },
   },
   palette: {
     primary: {
       main: "#b29e85", //beige
-      dark: "tan", //dark background
+      dark: "Tan", //dark background
       contrastText: "#fff",
     },
   },

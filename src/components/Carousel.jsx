@@ -14,16 +14,20 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "Jake welding",
-    imgPath: process.env.PUBLIC_URL + "/images/jake%20welding.jpg",
+    label: "Ornamental Railing Pickets",
+    imgPath: process.env.PUBLIC_URL + "/images/homeRailing.png",
   },
   {
-    label: "Jake welding",
-    imgPath: process.env.PUBLIC_URL + "/images/jake%20welding.jpg",
+    label: "Before & After",
+    imgPath: process.env.PUBLIC_URL + "/images/homeRailing2.png",
   },
   {
-    label: "Jake welding",
-    imgPath: process.env.PUBLIC_URL + "/images/jake%20welding.jpg",
+    label: "Wood Top Railings",
+    imgPath: process.env.PUBLIC_URL + "/images/homeRailing3.jpeg",
+  },
+  {
+    label: "Custom Styles for You",
+    imgPath: process.env.PUBLIC_URL + "/images/homeRailing4.png",
   },
 ];
 

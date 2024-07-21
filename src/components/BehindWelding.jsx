@@ -57,13 +57,11 @@ export default function BehindWelding() {
           variant="body1"
           sx={{ marginBottom: "1rem", borderTop: "1px solid #ccc" }}
         >
-          I'm Jake, the owner and lead welder. With years of experience in the
-          industry, I am dedicated to providing the best welding services in
-          Colorado. From custom work to railings and new projects, I love
-          bringing ideas to life through metal fabrication. My attention to
-          detail and passion for craftsmanship ensure that every project is
-          completed with precision and excellence. Contact me today to discuss
-          your welding needs and let's create something amazing together!
+          With years of experience in the industry, I am dedicated to providing
+          the best welding services in Colorado. From custom work to railings
+          and new projects, I love bringing ideas to life through metal
+          fabrication. My attention to detail and passion for craftsmanship
+          ensure that every project is completed with precision and excellence.
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: "2rem" }}>
           Contact me today to discuss your welding needs and let's create

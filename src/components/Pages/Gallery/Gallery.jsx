@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import SecondaryNavBar from "../../SecondaryNavBar";
+import Header from "../../Header";
 import GalleryCard from "./GalleryCard";
 import Footer from "../../Footer";
 
 export default function Gallery() {
   return (
     <Box>
-      <SecondaryNavBar />
+      <Header />
       <Box
         sx={{
           padding: "1rem",
@@ -55,33 +55,48 @@ export default function Gallery() {
         display="flex"
         flexWrap="wrap"
         justifyContent="space-evenly"
-        p={2}
-        sx={{ backgroundColor: "#e8e8dc" }}
+        sx={{ backgroundColor: "white" }}
       >
         <GalleryCard
-          image="/images/jake%20welding.jpg"
-          title="Cable Railing "
+          image="/images/CableRailing/CableFeature.png"
+          title="Cable Railing"
           body="A modern and sleek look while providing unobstructed views"
         />
         <GalleryCard
-          image="/images/jake%20welding.jpg"
-          title="Steel & Wood Railings "
+          image="/images/WoodSteel/FeatureWood.jpeg"
+          title="Wood & Steel Railings "
           body="Ideal for their sturdy construction and classic, warm aesthetic"
         />
         <GalleryCard
-          image="/images/jake%20welding.jpg"
+          image="/images/SteelRailing/FeatureSteel.jpeg"
+          title="Steel Railings"
+          body="Elevate your space with sleek, durable custom steel railings."
+        />
+        <GalleryCard
+          image="/images/OutdoorRailings/FeatureOutdoor.png"
           title="Deck & Outdoor Railings"
           body="Create a secure environment while enhancing the beauty of your outdoor space"
         />
         <GalleryCard
-          image="/images/jake%20welding.jpg"
-          title="Baby/Animal Gates"
+          image="/images/Gates/Gate7.jpeg"
+          title="Gates"
           body="Provide safety and peace of mind, ensure a secure environment for your loved ones"
         />
         <GalleryCard
-          image="/images/jake%20welding.jpg"
+          image="/images/CustomProjects/CustomFeature.jpeg"
           title="Custom Projects"
           body="Create unique pieces that reflect your personal style and needs"
+        />
+        <GalleryCard
+          image="/images/Ornamental/FeatureOrnamental.png"
+          title="Ornamental"
+          body="Transform your space with custom ornamental metal masterpieces."
+        />
+
+        <GalleryCard
+          image="/images/Commercial/CommercialFeature.jpeg"
+          title="Commercial"
+          body="Exceptional commercial welding solutions for superior strength and precision."
         />
       </Box>
       <Footer />

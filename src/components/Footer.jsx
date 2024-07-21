@@ -26,9 +26,15 @@ export default function Footer() {
         }}
       >
         <Box>
-          <Typography variant="body2">Info@MadsenMade.com</Typography>
-          <Typography variant="body2">(123) 456-7890</Typography>
-          <Typography variant="body2">Denver, Colorado</Typography>
+          <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
+            Info@MadsenMade.com
+          </Typography>
+          <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
+            (123) 456-7890
+          </Typography>
+          <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
+            Denver, Colorado
+          </Typography>
         </Box>
         <Box>
           <Typography>Sign up for our newsletter</Typography>

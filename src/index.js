@@ -59,9 +59,14 @@ const theme = createTheme({
       fontSize: "1.5rem",
       fontWeight: 600,
     },
+    h4: {
+      fontSize: "1.5rem",
+      fontWeight: 400,
+    },
     body1: {
       fontSize: "1.3rem",
       fontWeight: 500,
+      letterSpacing: ".5px",
     },
     body2: {
       fontSize: "1.3rem",

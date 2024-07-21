@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Typography, Paper, Grid } from "@mui/material";
-import SecondaryNavBar from "../SecondaryNavBar";
+import Header from "../Header";
 import Footer from "../Footer";
 
 export default function OurProcess() {
@@ -28,7 +28,7 @@ export default function OurProcess() {
   ];
   return (
     <Box>
-      <SecondaryNavBar />
+      <Header />
       <Box
         sx={{
           color: "black",

@@ -1,18 +1,19 @@
 import React from "react";
 import { Box, Typography, ListItem, ListItemText } from "@mui/material";
-import SecondaryNavBar from "../SecondaryNavBar";
+import Header from "../Header";
 import Footer from "../Footer";
 
 export default function Services() {
   const imageUrl = process.env.PUBLIC_URL + "/images/map.png";
-  const jakeWelding = process.env.PUBLIC_URL + "/images/jake%20welding.jpg";
+  const residential = process.env.PUBLIC_URL + "/images/Residential.jpeg";
+  const commercial = process.env.PUBLIC_URL + "/images/Commercial.jpeg";
+  const repairs = process.env.PUBLIC_URL + "/images/Repairs.jpeg";
 
   return (
     <Box>
-      <SecondaryNavBar />
+      <Header />
       <Box
         sx={{
-          background: "#b29e85",
           borderRadius: "3px",
           boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.3)",
         }}
@@ -26,7 +27,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#e8e8dc",
+          backgroundColor: "#a8bfaa",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
@@ -39,12 +40,12 @@ export default function Services() {
         >
           <Box
             sx={{
-              backgroundImage: `url(${jakeWelding})`,
+              backgroundImage: `url(${residential})`,
               flex: 1,
               backgroundRepeat: "no-repeat",
-              height: { sm: "10rem", lg: "15rem" },
+              height: { sm: "10rem", lg: "20rem" },
 
-              width: { sm: "20rem", lg: "25rem" },
+              width: { sm: "20rem", lg: "30rem" },
               boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.5)",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -58,7 +59,7 @@ export default function Services() {
         <Box
           sx={{
             flex: 1,
-            marginTop: { lg: "9rem", sm: "1rem" },
+            marginTop: { lg: "2rem", sm: "1rem" },
             marginLeft: { sm: "4rem", lg: "0rem" },
             marginRight: { sm: "1rem", lg: "6rem" },
             color: "black",
@@ -76,7 +77,7 @@ export default function Services() {
             Residential
           </Typography>
           <Typography
-            variant="body"
+            variant="body1"
             gutterBottom
             sx={{
               color: "black",
@@ -85,8 +86,14 @@ export default function Services() {
               marginTop: "3rem",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            At Madsen Made Welding & Fabrication, we specialize in creating
+            beautiful and durable residential railings that enhance the safety
+            and aesthetic appeal of your home. Whether you're looking for modern
+            designs or classic styles, our expert craftsmanship ensures that
+            each railing is tailored to your specific needs and preferences.
+            With a commitment to quality and attention to detail, we transform
+            your vision into reality, providing railings that not only meet but
+            exceed your expectations.
           </Typography>
         </Box>
       </Box>
@@ -99,7 +106,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#e8e8dc",
+          backgroundColor: "#a8bfaa",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
@@ -112,12 +119,12 @@ export default function Services() {
         >
           <Box
             sx={{
-              backgroundImage: `url(${jakeWelding})`,
+              backgroundImage: `url(${commercial})`,
               flex: 1,
               backgroundRepeat: "no-repeat",
-              height: { sm: "10rem", lg: "15rem" },
+              height: { sm: "10rem", lg: "20rem" },
 
-              width: { sm: "20rem", lg: "25rem" },
+              width: { sm: "20rem", lg: "30rem" },
               boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.5)",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -131,7 +138,7 @@ export default function Services() {
         <Box
           sx={{
             flex: 1,
-            marginTop: { lg: "9rem", sm: "1rem" },
+            marginTop: { lg: "2rem", sm: "1rem" },
             marginLeft: { sm: "4rem", lg: "0rem" },
             marginRight: { sm: "1rem", lg: "6rem" },
             color: "black",
@@ -146,10 +153,10 @@ export default function Services() {
               fontSize: { sm: "2.5rem", lg: "3rem" },
             }}
           >
-            Commercial
+            Commercial Railings and Welding Services
           </Typography>
           <Typography
-            variant="body"
+            variant="body1"
             gutterBottom
             sx={{
               color: "black",
@@ -158,8 +165,16 @@ export default function Services() {
               marginTop: "3rem",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            At Madsen Made Welding & Fabrication, we offer comprehensive welding
+            solutions for commercial projects, including custom railings,
+            structural platforms, and various other welding needs. Our expertise
+            spans across diverse industries, ensuring that each project is
+            completed with precision, durability, and safety in mind. From
+            sleek, modern railings to robust structural platforms, our skilled
+            team is dedicated to delivering exceptional results that meet the
+            unique demands of your business. Trust us for all your commercial
+            welding needs, and experience the quality and reliability that
+            define Madsen Made.
           </Typography>
         </Box>
       </Box>
@@ -172,7 +187,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#e8e8dc",
+          backgroundColor: "#a8bfaa",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
@@ -185,12 +200,12 @@ export default function Services() {
         >
           <Box
             sx={{
-              backgroundImage: `url(${jakeWelding})`,
+              backgroundImage: `url(${repairs})`,
               flex: 1,
               backgroundRepeat: "no-repeat",
-              height: { sm: "10rem", lg: "15rem" },
+              height: { sm: "10rem", lg: "20rem" },
 
-              width: { sm: "20rem", lg: "25rem" },
+              width: { sm: "20rem", lg: "30rem" },
               boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.5)",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -204,7 +219,7 @@ export default function Services() {
         <Box
           sx={{
             flex: 1,
-            marginTop: { lg: "9rem", sm: "1rem" },
+            marginTop: { lg: "2rem", sm: "1rem" },
             marginLeft: { sm: "4rem", lg: "0rem" },
             marginRight: { sm: "1rem", lg: "6rem" },
             color: "black",
@@ -219,10 +234,10 @@ export default function Services() {
               fontSize: { sm: "2.5rem", lg: "3rem" },
             }}
           >
-            Repairs
+            Repairs and Custom Requests
           </Typography>
           <Typography
-            variant="body"
+            variant="body1"
             gutterBottom
             sx={{
               color: "black",
@@ -231,8 +246,15 @@ export default function Services() {
               marginTop: "3rem",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            At Madsen Made Welding & Fabrication, we specialize in both repairs
+            and custom welding requests to meet your specific needs. Whether
+            it's restoring damaged railings or crafting unique custom pieces,
+            our skilled welders ensure meticulous craftsmanship and attention to
+            detail in every project. We pride ourselves on delivering reliable
+            solutions that restore functionality and enhance the aesthetic
+            appeal of your space. Trust us with your repair and custom welding
+            needs, and let us bring your ideas to life with quality and
+            expertise.
           </Typography>
         </Box>
       </Box>
@@ -242,34 +264,59 @@ export default function Services() {
           display: "flex",
           flexDirection: "column",
           alignItems: "left",
-          width: { sm: 600, lg: 1000 },
+          justifyContent: "center",
           margin: "auto",
           boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.3)",
           borderRadius: { sm: "6px", lg: "4px" },
           overflow: "hidden",
-          marginTop: "5rem",
           bgcolor: "#b29e85",
           color: "White",
           padding: "2rem",
         }}
       >
-        <Typography variant="h4">
-          Transforming Spaces with Madsen Made
-        </Typography>
         <Typography
-          variant="body"
-          sx={{ fontSize: { sm: "1rem", lg: "1.5rem" }, marginTop: "3rem" }}
+          variant="h2"
+          sx={{ marginLeft: "2rem", textAlign: "Center" }}
         >
-          At Madsen Made, we bring your visions of elegant railings and
-          structural metalwork to life. As a small family business, we are
-          dedicated to making your custom welding projects everything you
-          dreamed of. Client satisfaction and exceptional customer service are
-          our top priorities. Paired with best-in-class design, high-end
-          functionality, and craftsman-quality work, the Madsen Made family is
-          the only team you need. Our modern processes will help you create the
-          stunning railings you’ve always wanted, and we’ll be here to support
-          you every step of the way.
+          Other services offered
         </Typography>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "1fr 1fr",
+              md: "1fr 1fr 1fr",
+            },
+            gap: "1rem",
+            marginTop: "3rem",
+            marginLeft: "6rem",
+            textAlign: "Center",
+          }}
+        >
+          {[
+            "On-site Welding & Fabrication",
+            "Interior & Exterior Stair Railings",
+            "Safety/ADA Railings",
+            "Steel Cable Railings",
+            "Baby & Pet Gates",
+            "Structural Platforms",
+            "Commercial Railings & Custom Projects ",
+            "Certified Welding",
+            "All Custom Welding & Fabrication",
+            "Repair Work",
+            "Food Industry Equipment ",
+            "Decorative Metal",
+            "Stainless Steel ",
+            "Tig Welding",
+            "Aluminum Welding",
+            "and more!",
+          ].map((city) => (
+            <ListItem key={city} sx={{ padding: 0 }}>
+              <ListItemText primary={city} />
+            </ListItem>
+          ))}
+        </Box>
       </Box>
       {/* Map and service locations */}
       <Box
@@ -316,17 +363,17 @@ export default function Services() {
             color: "black",
           }}
         >
-          <Typography variant="h4" gutterBottom sx={{ color: "black" }}>
+          <Typography variant="h2" gutterBottom sx={{ color: "black" }}>
             We are proud to serve the Colorado Front Range
           </Typography>
           <Typography
-            variant="h5"
+            variant="h3"
             gutterBottom
             sx={{ color: "black", borderBottom: "1px solid #ccc" }}
           >
             From Boulder to Castle Rock and everywhere in between
           </Typography>
-          <Typography variant="h5" gutterBottom sx={{ color: "black" }}>
+          <Typography variant="h3" gutterBottom sx={{ color: "black" }}>
             Cities and Towns We Serve
           </Typography>
           <Box

@@ -12,14 +12,15 @@ export default function GalleryCard({ image, title, body }) {
     <Button sx={{ textAlign: "left" }}>
       <Card
         sx={{
-          width: { sm: "800px", lg: "700px" },
-          height: { sm: "500px", lg: "500px" },
-          m: 2,
+          width: { sm: "800px", lg: "800px" },
+          height: { sm: "500px", lg: "600px" },
           boxShadow: 3,
           borderRadius: 2,
+          mt: 3,
+          backgroundColor: "#a8bfaa",
         }}
       >
-        <CardMedia component="img" alt={title} height="350rem" image={image} />
+        <CardMedia component="img" alt={title} height="450rem" image={image} />
         <CardContent>
           <Typography
             gutterBottom

@@ -1,11 +1,11 @@
 import React from "react";
 import { Box } from "@mui/material";
-import SecondaryNavBar from "../SecondaryNavBar";
+import Header from "../Header";
 
 export default function Contact() {
   return (
     <Box>
-      <SecondaryNavBar />
+      <Header />
     </Box>
   );
 }

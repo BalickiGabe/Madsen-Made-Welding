@@ -1,29 +1,48 @@
 import React from "react";
-import { Grid } from "@mui/material";
-import PropTypes from "prop-types";
-import "./PhotoGallery.css";
+import { Box } from "@mui/material";
 
-const PhotoGallery = ({ photos }) => {
+export default function PhotoGallery({ photos }) {
   return (
-    <Grid container spacing={2}>
+    <Box
+      sx={{
+        display: "grid",
+        gridTemplateColumns: {
+          xs: "1fr",
+          sm: "1fr 1fr",
+          md: "1fr 1fr 1fr",
+        },
+        gap: "1rem",
+        marginTop: "3rem",
+        marginLeft: "2rem",
+        marginRight: "2rem",
+        textAlign: "center",
+      }}
+    >
       {photos.map((photo, index) => (
-        <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-          <div className="photo-container">
-            <img src={photo.url} alt={photo.alt} className="photo" />
-          </div>
-        </Grid>
+        <Box
+          key={index}
+          sx={{
+            width: "100%",
+            height: 0,
+            paddingBottom: "75%", // Adjust this to control the aspect ratio
+            overflow: "hidden",
+            position: "relative",
+          }}
+        >
+          <img
+            src={photo.src}
+            alt={photo.alt}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        </Box>
       ))}
-    </Grid>
+    </Box>
   );
-};
-
-PhotoGallery.propTypes = {
-  photos: PropTypes.arrayOf(
-    PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      alt: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};
-
-export default PhotoGallery;
+}

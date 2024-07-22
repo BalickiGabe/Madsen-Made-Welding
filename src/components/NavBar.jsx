@@ -40,6 +40,12 @@ export default function NavBar() {
           />
         </Button>
         <Button
+          onClick={() => navigate("/")}
+          sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
+        >
+          Home
+        </Button>
+        <Button
           onClick={() => navigate("/About")}
           sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
         >

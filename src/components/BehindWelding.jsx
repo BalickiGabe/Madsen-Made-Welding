@@ -1,7 +1,9 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function BehindWelding() {
+  const navigate = useNavigate();
   const imageUrl = process.env.PUBLIC_URL + "/images/jakeheadshot.jpg";
   return (
     <Box
@@ -67,7 +69,9 @@ export default function BehindWelding() {
           Contact me today to discuss your welding needs and let's create
           something amazing together!
         </Typography>
-        <Button variant="contained">Contact</Button>
+        <Button variant="contained" onClick={() => navigate("/Contact")}>
+          Contact
+        </Button>
       </Box>
     </Box>
   );

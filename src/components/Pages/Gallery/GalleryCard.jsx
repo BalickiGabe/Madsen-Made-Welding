@@ -7,9 +7,9 @@ import {
   Typography,
 } from "@mui/material";
 
-export default function GalleryCard({ image, title, body }) {
+export default function GalleryCard({ image, title, body, onClick }) {
   return (
-    <Button sx={{ textAlign: "left" }}>
+    <Button sx={{ textAlign: "left" }} onClick={onClick}>
       <Card
         sx={{
           width: { sm: "800px", lg: "800px" },
@@ -24,7 +24,7 @@ export default function GalleryCard({ image, title, body }) {
         <CardContent>
           <Typography
             gutterBottom
-            variant="h4"
+            variant="h2"
             component="div"
             sx={{
               fontSize: { sm: "4rem", md: "1.9rem", lg: "2rem" },
@@ -35,7 +35,7 @@ export default function GalleryCard({ image, title, body }) {
             {title}
           </Typography>
           <Typography
-            variant="body"
+            variant="body1"
             color="black"
             sx={{
               fontSize: { sm: "15px", md: "1.1rem", lg: "1.2rem" },

@@ -52,20 +52,20 @@ export default function About() {
         <Box
           sx={{
             flex: 1,
-            marginTop: "7rem",
+            marginTop: "2rem",
             marginRight: { sm: "4rem", lg: "10rem" },
             marginLeft: { sm: "3rem", lg: "0rem" },
             color: "black",
           }}
         >
-          <Typography variant="h2" gutterBottom sx={{ color: "black" }}>
+          {/* <Typography variant="h2" gutterBottom sx={{ color: "black" }}>
             Meet Our Family
-          </Typography>
+          </Typography> */}
           <Typography
             variant="body1"
             sx={{
               marginBottom: "2rem",
-              borderTop: "1px solid #ccc",
+              // borderTop: "1px solid #ccc",
             }}
           >
             We are Jake and Alex Kern, proud owners of Madsen Made Welding &
@@ -162,11 +162,12 @@ export default function About() {
                 marginRight: "2rem",
               }}
             >
-              Jake is a 2019 graduate of Triangle Tech College in Pennsylvania,
-              holding a Specialized Technology degree in Welding. His expertise
-              has been honed through working with exemplary contractors across
-              Pennsylvania, Washington, and Colorado. He is passionate about
-              creating beautiful, lasting railings and meeting new people.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
             </Typography>
           </CardContent>
         </Card>
@@ -183,11 +184,12 @@ export default function About() {
                 marginRight: "2rem",
               }}
             >
-              Jake is a 2019 graduate of Triangle Tech College in Pennsylvania,
-              holding a Specialized Technology degree in Welding. His expertise
-              has been honed through working with exemplary contractors across
-              Pennsylvania, Washington, and Colorado. He is passionate about
-              creating beautiful, lasting railings and meeting new people.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
             </Typography>
           </CardContent>
         </Card>

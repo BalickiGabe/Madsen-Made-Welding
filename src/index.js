@@ -5,6 +5,14 @@ import Services from "./components/Pages/Services";
 import Contact from "./components/Pages/Contact";
 import Gallery from "./components/Pages/Gallery/Gallery";
 import About from "./components/Pages/About";
+import CableRailing from "./components/Pages/Gallery/CableRailing";
+import Commercial from "./components/Pages/Gallery/Commercial";
+import CustomProjects from "./components/Pages/Gallery/CustomProjects";
+import Gates from "./components/Pages/Gallery/Gates";
+import Ornamental from "./components/Pages/Gallery/Ornamental";
+import OutdoorRailing from "./components/Pages/Gallery/OutdoorRailing";
+import SteelRailing from "./components/Pages/Gallery/SteelRailing";
+import SteelWoodRail from "./components/Pages/Gallery/SteelWoodRail";
 
 import OurProcess from "./components/Pages/OurProcess";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -42,6 +50,46 @@ const router = createBrowserRouter([
     element: <About />,
     errorElement: <div>404 Not Found</div>,
   },
+  {
+    path: "/CableRailings",
+    element: <CableRailing />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/Commercial",
+    element: <Commercial />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/Custom-Projects",
+    element: <CustomProjects />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/Gates",
+    element: <Gates />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/Ornamental",
+    element: <Ornamental />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/Outdoor-Railings",
+    element: <OutdoorRailing />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/Steel-Railings",
+    element: <SteelRailing />,
+    errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/Wood-and-Steel",
+    element: <SteelWoodRail />,
+    errorElement: <div>404 Not Found</div>,
+  },
 ]);
 
 const theme = createTheme({
@@ -64,7 +112,7 @@ const theme = createTheme({
       fontWeight: 400,
     },
     body1: {
-      fontSize: "1.3rem",
+      fontSize: "1.5rem",
       fontWeight: 500,
       letterSpacing: ".5px",
     },

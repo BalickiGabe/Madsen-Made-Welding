@@ -27,7 +27,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#a8bfaa",
+          backgroundColor: "#D3D3D3",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
@@ -106,7 +106,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#a8bfaa",
+          backgroundColor: "#D3D3D3",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
@@ -187,7 +187,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#a8bfaa",
+          backgroundColor: "#D3D3D3",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}

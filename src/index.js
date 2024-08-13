@@ -13,8 +13,7 @@ import Ornamental from "./components/Pages/Gallery/Ornamental";
 import OutdoorRailing from "./components/Pages/Gallery/OutdoorRailing";
 import SteelRailing from "./components/Pages/Gallery/SteelRailing";
 import SteelWoodRail from "./components/Pages/Gallery/SteelWoodRail";
-
-import OurProcess from "./components/Pages/OurProcess";
+import TestimonialsPage from "./components/Pages/TestimonialsPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
 
@@ -40,8 +39,8 @@ const router = createBrowserRouter([
     errorElement: <div>404 Not Found</div>,
   },
   {
-    path: "/OurProcess",
-    element: <OurProcess />,
+    path: "/Testimonials",
+    element: <TestimonialsPage />,
     errorElement: <div>404 Not Found</div>,
   },
 
@@ -117,6 +116,10 @@ const theme = createTheme({
       letterSpacing: ".5px",
     },
     body2: {
+      fontSize: "1.3rem",
+      fontWeight: 500,
+    },
+    body3: {
       fontSize: "1.3rem",
       fontWeight: 500,
     },

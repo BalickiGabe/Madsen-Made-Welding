@@ -64,7 +64,7 @@ export default function NavBar() {
           Gallery
         </Button>
         <Button
-          onClick={() => navigate("/OurProcess")}
+          onClick={() => navigate("/Testimonials")}
           sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
         >
           Testimonials

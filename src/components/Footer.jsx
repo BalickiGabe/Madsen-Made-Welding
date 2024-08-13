@@ -27,10 +27,10 @@ export default function Footer() {
       >
         <Box>
           <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
-            Info@MadsenMade.com
+            madsenmadellc@gmail.com
           </Typography>
           <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
-            (123) 456-7890
+            (303) 653-3864
           </Typography>
           <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
             Denver, Colorado

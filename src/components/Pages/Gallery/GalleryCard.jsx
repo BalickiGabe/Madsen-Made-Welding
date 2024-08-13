@@ -17,7 +17,7 @@ export default function GalleryCard({ image, title, body, onClick }) {
           boxShadow: 3,
           borderRadius: 2,
           mt: 3,
-          backgroundColor: "#a8bfaa",
+          backgroundColor: "white",
         }}
       >
         <CardMedia component="img" alt={title} height="450rem" image={image} />

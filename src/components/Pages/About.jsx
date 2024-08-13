@@ -5,11 +5,11 @@ import Header from "../Header";
 import Footer from "../Footer";
 
 export default function About() {
-  const Family = process.env.PUBLIC_URL + "/images/Family.jpg";
+  const Family = process.env.PUBLIC_URL + "/images/Family.svg";
   const Jake = process.env.PUBLIC_URL + "/images/Jake.jpg";
-  const Alex = process.env.PUBLIC_URL + "/images/Alex.jpg";
-  const Brian = process.env.PUBLIC_URL + "/images/Brian.jpg";
-  const Louie = process.env.PUBLIC_URL + "/images/Louie.jpg";
+  const Alex = process.env.PUBLIC_URL + "/images/Alex.svg";
+  // const Brian = process.env.PUBLIC_URL + "/images/Brian.svg";
+  const Louie = process.env.PUBLIC_URL + "/images/Louie.svg";
 
   return (
     <Box>
@@ -23,7 +23,7 @@ export default function About() {
           padding: "1rem",
           paddingBottom: "3rem",
 
-          backgroundColor: "#a8bfaa",
+          backgroundColor: "white",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
       >
@@ -38,34 +38,30 @@ export default function About() {
               backgroundImage: `url(${Family})`,
               flex: 1,
               backgroundRepeat: "no-repeat",
-              height: { sm: "20rem", lg: "27rem" },
+              height: { sm: "38rem", lg: "35rem" },
               borderRadius: ".5%",
-              width: { sm: "27rem", lg: "34rem" },
-              boxShadow: "0 0 10px 0 rgba(0, 0, 0, 1)",
+              width: { sm: "40rem", lg: "34rem" },
+              paddingLeft: "8rem",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              marginTop: "3rem",
               paddingTop: "8rem",
+              margin: { sm: "0px", lg: "7rem" },
             }}
           />
         </Box>
         <Box
           sx={{
             flex: 1,
-            marginTop: "2rem",
-            marginRight: { sm: "4rem", lg: "10rem" },
+            marginTop: "8rem",
+            marginRight: { sm: "4rem", lg: "8rem" },
             marginLeft: { sm: "3rem", lg: "0rem" },
             color: "black",
           }}
         >
-          {/* <Typography variant="h2" gutterBottom sx={{ color: "black" }}>
-            Meet Our Family
-          </Typography> */}
           <Typography
             variant="body1"
             sx={{
               marginBottom: "2rem",
-              // borderTop: "1px solid #ccc",
             }}
           >
             We are Jake and Alex Kern, proud owners of Madsen Made Welding &
@@ -105,9 +101,16 @@ export default function About() {
         flexWrap="wrap"
         justifyContent="space-evenly"
         p={2}
-        sx={{ backgroundColor: "#a8bfaa" }}
+        sx={{ backgroundColor: "white" }}
       >
-        <Card sx={{ marginBottom: ".8rem", maxWidth: "50rem" }}>
+        <Card
+          sx={{
+            marginBottom: ".8rem",
+            maxWidth: "50rem",
+            border: "none",
+            boxShadow: "none",
+          }}
+        >
           <CardMedia component="img" height="700rem" image={Jake} />
           <CardContent>
             <Typography
@@ -128,7 +131,14 @@ export default function About() {
           </CardContent>
         </Card>
 
-        <Card sx={{ marginBottom: ".8rem", maxWidth: "50rem" }}>
+        <Card
+          sx={{
+            marginBottom: ".8rem",
+            maxWidth: "50rem",
+            border: "none",
+            boxShadow: "none",
+          }}
+        >
           <CardMedia component="img" height="700rem" image={Alex} />
           <CardContent>
             <Typography
@@ -150,7 +160,14 @@ export default function About() {
           </CardContent>
         </Card>
 
-        <Card sx={{ marginBottom: ".8rem", maxWidth: "50rem" }}>
+        {/* <Card
+          sx={{
+            marginBottom: ".8rem",
+            maxWidth: "50rem",
+            border: "none",
+            boxShadow: "none",
+          }}
+        >
           <CardMedia component="img" height="700rem" image={Brian} />
           <CardContent>
             <Typography
@@ -162,17 +179,22 @@ export default function About() {
                 marginRight: "2rem",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Brian Tanner is the apprentice and shop fabricator at Madsen Made
+              Welding & Fabrication. He enjoys fishing and has a passion for
+              building things. Brian is dedicated to honing his craft and
+              contributing to the team's success.
             </Typography>
           </CardContent>
-        </Card>
+        </Card> */}
 
-        <Card sx={{ marginBottom: ".8rem", maxWidth: "50rem" }}>
+        <Card
+          sx={{
+            marginBottom: ".8rem",
+            maxWidth: "50rem",
+            border: "none",
+            boxShadow: "none",
+          }}
+        >
           <CardMedia component="img" height="700rem" image={Louie} />
           <CardContent>
             <Typography
@@ -184,12 +206,10 @@ export default function About() {
                 marginRight: "2rem",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Louie is the beloved shop doggo at Madsen Made Welding &
+              Fabrication, an Old English Sheepdog who loves hiking, bones, and
+              sheep. His friendly demeanor and playful spirit bring joy to
+              everyone at the shop.
             </Typography>
           </CardContent>
         </Card>

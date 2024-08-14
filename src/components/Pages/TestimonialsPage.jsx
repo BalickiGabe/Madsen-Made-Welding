@@ -97,14 +97,7 @@ export default function TestimonialsPage() {
           padding: { xs: "1rem", sm: "2rem" },
         }}
       >
-        <Grid
-          container
-          spacing={4}
-          sx={{
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Box>
           {testimonials.map((testimonial, index) => (
             <Grid
               item
@@ -129,7 +122,7 @@ export default function TestimonialsPage() {
               />
             </Grid>
           ))}
-        </Grid>
+        </Box>
       </Box>
       <Footer />
     </Box>

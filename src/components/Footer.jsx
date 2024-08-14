@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -26,34 +28,31 @@ export default function Footer() {
         }}
       >
         <Box>
-          <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
+          <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
             madsenmadellc@gmail.com
           </Typography>
-          <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
+          <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
             (303) 653-3864
           </Typography>
-          <Typography variant="body2" sx={{ fontSize: "1.1rem" }}>
+          <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
             Denver, Colorado
           </Typography>
         </Box>
         <Box>
-          <Typography>Sign up for our newsletter</Typography>
           <Box
             component="form"
-            sx={{ display: "flex", alignItems: "center", marginTop: "8px" }}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              marginTop: "8px",
+              marginRight: "3rem",
+            }}
           >
-            <TextField
-              variant="outlined"
-              placeholder="Enter email address"
-              size="small"
-              sx={{
-                marginRight: "8px",
-                backgroundColor: "#fff",
-                borderRadius: "4px",
-              }}
-            />
-            <Button variant="contained" color="primary">
-              SUBSCRIBE
+            <Button color="primary">
+              <FacebookIcon sx={{ fontSize: "4rem" }} />
+            </Button>
+            <Button color="primary">
+              <InstagramIcon sx={{ fontSize: "4rem" }} />
             </Button>
           </Box>
         </Box>
@@ -66,7 +65,10 @@ export default function Footer() {
           paddingTop: "16px",
         }}
       >
-        <Typography variant="body3">
+        <Typography
+          variant="body2"
+          sx={{ fontSize: { sm: ".5rem", lg: "1rem" } }}
+        >
           © {year} Madsen Made Welding and Fabrication. All rights reserved.
         </Typography>
       </Box>

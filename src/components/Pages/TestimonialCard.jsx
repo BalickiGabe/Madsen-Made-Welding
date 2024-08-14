@@ -11,9 +11,9 @@ export default function TestimonialCard({ text, reviewer }) {
         bgcolor: "#f9f9f9",
         textAlign: "center",
         borderRadius: "8px",
-        maxWidth: "100%",
-        minWidth: "25rem",
-        margin: "auto",
+        maxWidth: "85%",
+        minWidth: "85%",
+        margin: "2rem",
       }}
     >
       <Typography
@@ -22,6 +22,8 @@ export default function TestimonialCard({ text, reviewer }) {
           marginBottom: "0.5rem",
           fontStyle: "italic",
           fontSize: { xs: "1rem", sm: "1.25rem" },
+          marginLeft: "10rem",
+          marginRight: "10rem",
         }}
       >
         &ldquo;{text}&rdquo;

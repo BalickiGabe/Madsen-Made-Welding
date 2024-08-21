@@ -76,16 +76,16 @@ export default function TestimonialsPage() {
           }}
         >
           <Typography
-            variant="h2"
+            variant="Body1"
             gutterBottom
             sx={{
               color: "white",
               textAlign: "center",
-              fontSize: { sm: "4rem", lg: "3rem" },
+              fontSize: { sm: "3rem", lg: "3.2rem" },
             }}
           >
             See what our happy customers are saying about our craftsmanship and
-            dedication to quality.
+            dedication to quality!
           </Typography>
         </Box>
       </Box>

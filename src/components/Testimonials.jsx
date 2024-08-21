@@ -39,7 +39,7 @@ export default function Testimonial() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center", // Center vertically
-        height: "30rem",
+        height: { sm: "42rem", lg: "30rem" },
         bgcolor: "#b29e85",
         color: "white",
       }}
@@ -55,8 +55,12 @@ export default function Testimonial() {
         }}
       >
         <Typography
-          variant="h3"
-          sx={{ marginBottom: "1rem", textAlign: "center" }}
+          variant="h2"
+          sx={{
+            marginBottom: "1rem",
+            textAlign: "center",
+            fontSize: { sm: "3rem", lg: "2rem" },
+          }}
         >
           Testimonials
         </Typography>
@@ -76,10 +80,13 @@ export default function Testimonial() {
                     padding: "1rem",
                     bgcolor: "transparent",
                     color: "#fff",
-                    textAlign: "center", // Center text horizontally
+                    textAlign: "center",
                   }}
                 >
-                  <Typography variant="body1" sx={{}}>
+                  <Typography
+                    variant="body1"
+                    sx={{ fontSize: { sm: "1rem", lg: "1.5rem" } }}
+                  >
                     {testimonial.text}
                   </Typography>
                 </Paper>

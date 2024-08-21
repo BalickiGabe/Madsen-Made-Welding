@@ -27,7 +27,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#D3D3D3",
+          backgroundColor: "primary.main",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
@@ -43,9 +43,9 @@ export default function Services() {
               backgroundImage: `url(${residential})`,
               flex: 1,
               backgroundRepeat: "no-repeat",
-              height: { sm: "10rem", lg: "20rem" },
+              height: { sm: "28rem", lg: "20rem" },
 
-              width: { sm: "20rem", lg: "30rem" },
+              width: { sm: "90%", lg: "30rem" },
               boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.5)",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -70,7 +70,7 @@ export default function Services() {
             gutterBottom
             sx={{
               color: "black",
-              borderBottom: "1px solid #ccc",
+              borderBottom: "1px solid black",
               fontSize: { sm: "2.5rem", lg: "3rem" },
             }}
           >
@@ -106,7 +106,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#D3D3D3",
+          backgroundColor: "primary.main",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
@@ -122,9 +122,9 @@ export default function Services() {
               backgroundImage: `url(${commercial})`,
               flex: 1,
               backgroundRepeat: "no-repeat",
-              height: { sm: "10rem", lg: "20rem" },
+              height: { sm: "28rem", lg: "20rem" },
 
-              width: { sm: "20rem", lg: "30rem" },
+              width: { sm: "90%", lg: "30rem" },
               boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.5)",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -149,7 +149,7 @@ export default function Services() {
             gutterBottom
             sx={{
               color: "black",
-              borderBottom: "1px solid #ccc",
+              borderBottom: "1px solid black",
               fontSize: { sm: "2.5rem", lg: "3rem" },
             }}
           >
@@ -187,7 +187,7 @@ export default function Services() {
           marginTop: "2rem",
           padding: "1rem",
           paddingBottom: "3rem",
-          backgroundColor: "#D3D3D3",
+          backgroundColor: "primary.main",
           border: "1px solid #ccc",
           borderRadius: { sm: "6px", lg: "4px" },
         }}
@@ -203,9 +203,9 @@ export default function Services() {
               backgroundImage: `url(${repairs})`,
               flex: 1,
               backgroundRepeat: "no-repeat",
-              height: { sm: "10rem", lg: "20rem" },
+              height: { sm: "28rem", lg: "20rem" },
 
-              width: { sm: "20rem", lg: "30rem" },
+              width: { sm: "90%", lg: "30rem" },
               boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.5)",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -230,7 +230,7 @@ export default function Services() {
             gutterBottom
             sx={{
               color: "black",
-              borderBottom: "1px solid #ccc",
+              borderBottom: "1px solid black",
               fontSize: { sm: "2.5rem", lg: "3rem" },
             }}
           >
@@ -272,6 +272,7 @@ export default function Services() {
           bgcolor: "#b29e85",
           color: "White",
           padding: "2rem",
+          marginTop: "2rem",
         }}
       >
         <Typography

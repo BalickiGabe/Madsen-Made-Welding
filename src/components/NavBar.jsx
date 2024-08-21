@@ -11,7 +11,7 @@ export default function NavBar() {
       sx={{
         display: "flex",
         justifyContent: "center",
-        mt: 0,
+        mt: "2rem",
       }}
     >
       <ButtonGroup
@@ -36,7 +36,7 @@ export default function NavBar() {
           <img
             src={imageUrl}
             alt="logo"
-            style={{ width: "100%", height: "100%" }}
+            style={{ width: "5rem", height: "5rem" }}
           />
         </Button>
         <Button

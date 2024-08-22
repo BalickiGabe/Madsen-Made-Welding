@@ -13,7 +13,7 @@ const testimonials = [
     text: `"We just had Jake and his team replace our old stair rails with new, custom made rails that are absolutely beautiful. He was really good about checking with us to make sure that the colors and configuration were correct. And they did the whole job themselves, no need to bring in any other contractors to do drywall repairs or painting."   - Phil`,
   },
   {
-    text: `"We recently had a stair railing welded and installed, and we couldn't be happier with both the final product and the entire process. From the initial consultation to the completion of the project, everything was smooth and stress-free. Jake was professional, punctual, and highly skilled. The railing has truly transformed the look of our staircase. We highly recommend their services. Thank you for a job well done!"   - Jeff`,
+    text: `“I cannot say enough how much I recommend their work! Completely professional and reasonably priced, the stair railings they installed for us are a dream come true!” Allie"`,
   },
   {
     text: `"Jake and Alex were great to work with! I have a remodel project that is not that straightforward and he was so patient and willing to do whatever necessary in a timely and professional manner. I would definitely use him again and highly recommend them!!"   - Donna`,
@@ -38,7 +38,7 @@ export default function Testimonial() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center", // Center vertically
+        justifyContent: "center",
         height: { sm: "42rem", lg: "30rem" },
         bgcolor: "#b29e85",
         color: "white",
@@ -59,7 +59,7 @@ export default function Testimonial() {
           sx={{
             marginBottom: "1rem",
             textAlign: "center",
-            fontSize: { sm: "3rem", lg: "2rem" },
+            fontSize: { sm: "3.1rem", lg: "2rem" },
           }}
         >
           Testimonials

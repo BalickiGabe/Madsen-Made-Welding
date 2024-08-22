@@ -94,7 +94,6 @@ export default function TestimonialsPage() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: { xs: "1rem", sm: "2rem" },
         }}
       >
         <Box>

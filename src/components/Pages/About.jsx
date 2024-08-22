@@ -6,10 +6,10 @@ import Footer from "../Footer";
 
 export default function About() {
   const Family = process.env.PUBLIC_URL + "/images/Family.svg";
-  const Jake = process.env.PUBLIC_URL + "/images/Jake.jpg";
-  const Alex = process.env.PUBLIC_URL + "/images/Alex.svg";
+  const Jake = process.env.PUBLIC_URL + "/images/Jake.png";
+  const Alex = process.env.PUBLIC_URL + "/images/Alex.png";
   // const Brian = process.env.PUBLIC_URL + "/images/Brian.svg";
-  const Louie = process.env.PUBLIC_URL + "/images/Louie.svg";
+  const Louie = process.env.PUBLIC_URL + "/images/Louie.png";
 
   return (
     <Box>
@@ -122,7 +122,7 @@ export default function About() {
                 marginRight: "2rem",
               }}
             >
-              Jake is a 2019 graduate of Triangle Tech College in Pennsylvania,
+              Jake is a graduate of Triangle Tech College in Pennsylvania,
               holding a Specialized Technology degree in Welding. His expertise
               has been honed through working with exemplary contractors across
               Pennsylvania, Washington, and Colorado. He is passionate about

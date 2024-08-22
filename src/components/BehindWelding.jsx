@@ -69,7 +69,11 @@ export default function BehindWelding() {
           Contact me today to discuss your welding needs and let's create
           something amazing together!
         </Typography>
-        <Button variant="contained" onClick={() => navigate("/Contact")}>
+        <Button
+          variant="contained"
+          sx={{ fontSize: { sm: "1.7rem", lg: "1rem" } }}
+          onClick={() => navigate("/Contact")}
+        >
           Contact
         </Button>
       </Box>

@@ -51,7 +51,11 @@ export default function AboutHome() {
           and are happy to recommend us to others!
         </Typography>
 
-        <Button variant="contained" onClick={() => navigate("/Services")}>
+        <Button
+          variant="contained"
+          sx={{ fontSize: { sm: "1.7rem", lg: "1rem" } }}
+          onClick={() => navigate("/Services")}
+        >
           Explore Services
         </Button>
       </Box>

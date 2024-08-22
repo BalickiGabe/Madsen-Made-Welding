@@ -22,6 +22,7 @@ export default function Gallery() {
           backgroundColor: "#b29e85",
           borderRadius: { sm: "6px", lg: "4px" },
           textAlign: "left",
+          mt: "1.5rem",
         }}
       >
         <Box

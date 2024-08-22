@@ -21,9 +21,9 @@ export default function TestimonialCard({ text, reviewer }) {
         sx={{
           marginBottom: "0.5rem",
           fontStyle: "italic",
-          fontSize: { xs: "1rem", sm: "1.25rem" },
-          marginLeft: "10rem",
-          marginRight: "10rem",
+          fontSize: { sm: "1rem" },
+          marginLeft: { sm: "0rem", lg: "10rem" },
+          marginRight: { sm: "0rem", lg: "10rem" },
         }}
       >
         &ldquo;{text}&rdquo;

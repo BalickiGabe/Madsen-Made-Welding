@@ -29,49 +29,68 @@ export default function NavBar() {
           sx={{
             padding: 0,
             minWidth: 0,
-            width: { sm: "2.5rem", lg: "4.5rem" },
-            height: { sm: "2.5rem", lg: "4.5rem" },
+            width: { sm: "2.5rem", lg: "4rem" },
+            height: { sm: "2.5rem", lg: "4rem" },
+            // display: { sm: "none" },
           }}
         >
           <img
             src={imageUrl}
             alt="logo"
-            style={{ width: "5rem", height: "5rem" }}
+            style={{ width: "5.5rem", height: "5.5rem" }}
           />
         </Button>
         <Button
           onClick={() => navigate("/")}
-          sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
+          sx={{
+            fontWeight: { sm: "bold", lg: "none" },
+            fontSize: { sm: "1.4rem", lg: "1.25rem" },
+          }}
         >
           Home
         </Button>
         <Button
           onClick={() => navigate("/About")}
-          sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
+          sx={{
+            fontWeight: { sm: "bold", lg: "none" },
+            fontSize: { sm: "1.4rem", lg: "1.25rem" },
+          }}
         >
           About
         </Button>
         <Button
           onClick={() => navigate("/Services")}
-          sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
+          sx={{
+            fontWeight: { sm: "bold", lg: "none" },
+            fontSize: { sm: "1.4rem", lg: "1.25rem" },
+          }}
         >
           Services
         </Button>
         <Button
           onClick={() => navigate("/Gallery")}
-          sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
+          sx={{
+            fontWeight: { sm: "bold", lg: "none" },
+            fontSize: { sm: "1.4rem", lg: "1.25rem" },
+          }}
         >
           Gallery
         </Button>
         <Button
           onClick={() => navigate("/Testimonials")}
-          sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
+          sx={{
+            fontWeight: { sm: "bold", lg: "none" },
+            fontSize: { sm: "1.4rem", lg: "1.25rem" },
+          }}
         >
           Testimonials
         </Button>
         <Button
           onClick={() => navigate("/Contact")}
-          sx={{ fontSize: { sm: "1.5rem", lg: "1.25rem" } }}
+          sx={{
+            fontWeight: { sm: "bold", lg: "none" },
+            fontSize: { sm: "1.4rem", lg: "1.25rem" },
+          }}
         >
           Contact
         </Button>

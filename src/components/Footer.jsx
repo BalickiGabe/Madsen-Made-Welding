@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, TextField, Button } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
@@ -32,7 +32,10 @@ export default function Footer() {
             madsenmadellc@gmail.com
           </Typography>
           <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
-            (303) 653-3864
+            Jake: (720) 281-4879
+          </Typography>
+          <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
+            Alex: (303) 653-3864
           </Typography>
           <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
             Denver, Colorado
@@ -48,11 +51,30 @@ export default function Footer() {
               marginRight: "3rem",
             }}
           >
-            <Button color="primary">
+            <Button
+              color="primary"
+              href="https://www.facebook.com/Madsenmadellc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FacebookIcon sx={{ fontSize: "4rem" }} />
             </Button>
-            <Button color="primary">
+            <Button
+              color="primary"
+              href="https://www.instagram.com/madsen_made/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <InstagramIcon sx={{ fontSize: "4rem" }} />
+            </Button>
+            <Button
+              color="primary"
+              href="https://www.thumbtack.com/co/denver/metal-fabricators/madsen-made-welding-fabrication/service/463516994295357449?utm_medium=web&utm_source=txt&surface=sp&referrer_pk=411268096510590985"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ fontSize: "1.5rem" }}
+            >
+              Thumbtack
             </Button>
           </Box>
         </Box>
@@ -67,7 +89,7 @@ export default function Footer() {
       >
         <Typography
           variant="body2"
-          sx={{ fontSize: { sm: ".5rem", lg: "1rem" } }}
+          sx={{ fontSize: { sm: ".65rem", lg: "1rem" } }}
         >
           © {year} Madsen Made Welding and Fabrication. All rights reserved.
         </Typography>

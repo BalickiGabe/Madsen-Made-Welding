@@ -81,7 +81,7 @@ export default function TestimonialsPage() {
             sx={{
               color: "white",
               textAlign: "center",
-              fontSize: { sm: "3rem", lg: "3.2rem" },
+              fontSize: { sm: "4rem", lg: "3.2rem" },
             }}
           >
             See what our happy customers are saying about our craftsmanship and

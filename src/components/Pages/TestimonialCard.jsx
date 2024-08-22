@@ -33,7 +33,7 @@ export default function TestimonialCard({ text, reviewer }) {
         sx={{
           fontWeight: "bold",
           marginTop: "1rem",
-          fontSize: { xs: "0.875rem", sm: "1rem" },
+          fontSize: { sm: "2rem", lg: "1rem" },
         }}
       >
         {reviewer}

@@ -57,7 +57,11 @@ export default function BehindWelding() {
         </Typography>
         <Typography
           variant="body1"
-          sx={{ marginBottom: "1rem", borderTop: "1px solid #ccc" }}
+          sx={{
+            marginBottom: "1rem",
+            borderTop: "1px solid #ccc",
+            fontSize: { sm: "2.5rem", lg: "1.5rem" },
+          }}
         >
           With years of experience in the industry, I am dedicated to providing
           the best welding services in Colorado. From custom work to railings
@@ -65,7 +69,13 @@ export default function BehindWelding() {
           fabrication. My attention to detail and passion for craftsmanship
           ensure that every project is completed with precision and excellence.
         </Typography>
-        <Typography variant="body1" sx={{ marginBottom: "2rem" }}>
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "2rem",
+            fontSize: { sm: "2.5rem", lg: "1.5rem" },
+          }}
+        >
           Contact me today to discuss your welding needs and let's create
           something amazing together!
         </Typography>

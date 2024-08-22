@@ -95,11 +95,11 @@ const theme = createTheme({
   typography: {
     fontFamily: ["Montserrat", "sans-serif"].join(","),
     h1: {
-      fontSize: "3rem",
+      fontSize: { lg: "3rem", sm: "4.5rem" },
       fontWeight: 600,
     },
     h2: {
-      fontSize: "2rem",
+      fontSize: { lg: "2rem", sm: "3.5rem" },
       fontWeight: 600,
     },
     h3: {
@@ -111,7 +111,7 @@ const theme = createTheme({
       fontWeight: 400,
     },
     body1: {
-      fontSize: "1.5rem",
+      fontSize: { sm: "2.5rem", lg: "1.5rem" },
       fontWeight: 500,
       letterSpacing: ".5px",
     },

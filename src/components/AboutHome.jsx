@@ -28,12 +28,20 @@ export default function AboutHome() {
           color: "black",
         }}
       >
-        <Typography variant="h2" gutterBottom sx={{ color: "black" }}>
+        <Typography
+          variant="h2"
+          gutterBottom
+          sx={{ color: "black", fontSize: { sm: "4rem", lg: "3rem" } }}
+        >
           Family Owned & Operated!
         </Typography>
         <Typography
           variant="body1"
-          sx={{ marginBottom: "1rem", borderTop: "1px solid #ccc" }}
+          sx={{
+            marginBottom: "1rem",
+            borderTop: "1px solid #ccc",
+            fontSize: { sm: "2.5rem", lg: "1.5rem" },
+          }}
         >
           At Madsen Made Welding & Fabrication, we are your go-to provider for
           custom railings and fabrication services. As a family-owned business,
@@ -43,7 +51,13 @@ export default function AboutHome() {
           employ the latest technologies and techniques to ensure that every
           project is a success.
         </Typography>
-        <Typography variant="body1" sx={{ marginBottom: "2rem" }}>
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "2rem",
+            fontSize: { sm: "2.5rem", lg: "1.5rem" },
+          }}
+        >
           As an in-demand welding company, we are committed to two main
           principles: providing the highest level of service possible and
           ensuring that our prices remain competitive and affordable. This focus
@@ -53,7 +67,7 @@ export default function AboutHome() {
 
         <Button
           variant="contained"
-          sx={{ fontSize: { sm: "1.7rem", lg: "1rem" } }}
+          sx={{ fontSize: { sm: "2.5rem", lg: "1rem" } }}
           onClick={() => navigate("/Services")}
         >
           Explore Services

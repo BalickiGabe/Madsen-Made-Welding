@@ -62,6 +62,7 @@ export default function About() {
             variant="body1"
             sx={{
               marginBottom: "2rem",
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
             }}
           >
             We are Jake and Alex Kern, proud owners of Madsen Made Welding &
@@ -75,6 +76,7 @@ export default function About() {
             variant="body1"
             sx={{
               marginBottom: "2rem",
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
             }}
           >
             In our free time, we are passionate hockey fans and avid supporters
@@ -86,6 +88,7 @@ export default function About() {
             variant="body1"
             sx={{
               marginBottom: "2rem",
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
             }}
           >
             We love the opportunity to meet new people and create stunning
@@ -120,6 +123,7 @@ export default function About() {
                 marginLeft: "2rem",
                 marginBottom: "3rem",
                 marginRight: "2rem",
+                fontSize: { sm: "2.5rem", lg: "1.5rem" },
               }}
             >
               Jake is a graduate of Triangle Tech College in Pennsylvania,
@@ -148,6 +152,7 @@ export default function About() {
                 marginLeft: "2rem",
                 marginBottom: "3rem",
                 marginRight: "2rem",
+                fontSize: { sm: "2.5rem", lg: "1.5rem" },
               }}
             >
               Alex, a Colorado native, draws on her legal education and
@@ -204,6 +209,7 @@ export default function About() {
                 marginLeft: "2rem",
                 marginBottom: "3rem",
                 marginRight: "2rem",
+                fontSize: { sm: "2.5rem", lg: "1.5rem" },
               }}
             >
               Louie is the beloved shop doggo at Madsen Made Welding &

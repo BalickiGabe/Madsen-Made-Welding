@@ -18,6 +18,7 @@ export default function Header() {
         height: { sm: "5rem", lg: "6rem" },
         overflow: "hidden",
         mt: "5rem",
+        mb: "2rem",
       }}
     >
       <NavBar />

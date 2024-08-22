@@ -12,6 +12,8 @@ export default function NavBar() {
         display: "flex",
         justifyContent: "center",
         mt: "2rem",
+        mb: "2rem",
+        backgroundColor: "white",
       }}
     >
       <ButtonGroup

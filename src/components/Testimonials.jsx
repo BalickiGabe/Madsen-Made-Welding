@@ -3,8 +3,8 @@ import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
+import SwipeableViews from "react-swipeable-views-react-18-fix";
+import { autoPlay } from "react-swipeable-views-utils-react-18-fix";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 

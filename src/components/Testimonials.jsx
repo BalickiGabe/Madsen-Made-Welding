@@ -10,9 +10,6 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const testimonials = [
   {
-    text: `"We just had Jake and his team replace our old stair rails with new, custom made rails that are absolutely beautiful. He was really good about checking with us to make sure that the colors and configuration were correct. And they did the whole job themselves, no need to bring in any other contractors to do drywall repairs or painting."   - Phil`,
-  },
-  {
     text: `“I cannot say enough how much I recommend their work! Completely professional and reasonably priced, the stair railings they installed for us are a dream come true!” Allie"`,
   },
   {

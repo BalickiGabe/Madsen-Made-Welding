@@ -81,7 +81,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FacebookIcon sx={{ fontSize: "4rem" }} />
+              <FacebookIcon sx={{ ontSize: { sm: "5rem", lg: "4rem" } }} />
             </Button>
             <Button
               color="primary"
@@ -89,14 +89,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <InstagramIcon sx={{ fontSize: "4rem" }} />
+              <InstagramIcon sx={{ fontSize: { sm: "5rem", lg: "4rem" } }} />
             </Button>
             <Button
               color="primary"
               href="https://www.thumbtack.com/co/denver/metal-fabricators/madsen-made-welding-fabrication/service/463516994295357449?utm_medium=web&utm_source=txt&surface=sp&referrer_pk=411268096510590985"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ fontSize: "1.5rem" }}
+              sx={{ ontSize: { sm: "5rem", lg: "4rem" } }}
             >
               Thumbtack
             </Button>

@@ -11,7 +11,7 @@ export default function Home() {
     <Box>
       <Header />
       <BehindWelding />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <AboutHome />
       <Footer />
     </Box>

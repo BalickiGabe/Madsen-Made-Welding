@@ -49,10 +49,18 @@ export default function BehindWelding() {
           color: "black",
         }}
       >
-        <Typography variant="h1" gutterBottom sx={{ color: "black" }}>
+        <Typography
+          variant="h1"
+          gutterBottom
+          sx={{ color: "black", fontSize: { sm: "4rem", lg: "3rem" } }}
+        >
           Welcome to Madsen Made Welding & Fabrication
         </Typography>
-        <Typography variant="h2" gutterBottom sx={{ color: "black" }}>
+        <Typography
+          variant="h2"
+          gutterBottom
+          sx={{ color: "black", fontSize: { sm: "3.75rem", lg: "2.5rem" } }}
+        >
           I'm Jake, the owner and lead welder
         </Typography>
         <Typography
@@ -81,7 +89,7 @@ export default function BehindWelding() {
         </Typography>
         <Button
           variant="contained"
-          sx={{ fontSize: { sm: "1.7rem", lg: "1rem" } }}
+          sx={{ fontSize: { sm: "2.5rem", lg: "1rem" } }}
           onClick={() => navigate("/Contact")}
         >
           Contact

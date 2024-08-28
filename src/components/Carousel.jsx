@@ -71,7 +71,9 @@ export default function Carousel() {
           bgcolor: "background.default",
         }}
       >
-        <Typography sx={{ color: "#b29e85" }}>
+        <Typography
+          sx={{ fontSize: { sm: "2rem", lg: "1.5rem" }, color: "#b29e85" }}
+        >
           {images[activeStep].label}
         </Typography>
       </Paper>
@@ -109,6 +111,7 @@ export default function Carousel() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
+            sx={{ fontSize: { sm: "2rem", lg: "1.5rem" } }}
           >
             Next
             {theme.direction === "rtl" ? (
@@ -119,7 +122,12 @@ export default function Carousel() {
           </Button>
         }
         backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+          <Button
+            size="small"
+            onClick={handleBack}
+            disabled={activeStep === 0}
+            sx={{ fontSize: { sm: "2rem", lg: "1.5rem" } }}
+          >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (

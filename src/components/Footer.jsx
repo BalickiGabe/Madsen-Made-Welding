@@ -28,16 +28,40 @@ export default function Footer() {
         }}
       >
         <Box>
-          <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
+          <Typography
+            variant="body1"
+            sx={{
+              marginLeft: "3rem",
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
+            }}
+          >
             madsenmadellc@gmail.com
           </Typography>
-          <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
+          <Typography
+            variant="body1"
+            sx={{
+              marginLeft: "3rem",
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
+            }}
+          >
             Jake: (720) 281-4879
           </Typography>
-          <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
+          <Typography
+            variant="body1"
+            sx={{
+              marginLeft: "3rem",
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
+            }}
+          >
             Alex: (303) 653-3864
           </Typography>
-          <Typography variant="body1" sx={{ marginLeft: "3rem" }}>
+          <Typography
+            variant="body1"
+            sx={{
+              marginLeft: "3rem",
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
+            }}
+          >
             Denver, Colorado
           </Typography>
         </Box>
@@ -89,7 +113,7 @@ export default function Footer() {
       >
         <Typography
           variant="body2"
-          sx={{ fontSize: { sm: ".65rem", lg: "1rem" } }}
+          sx={{ fontSize: { sm: "1rem", lg: "1rem" } }}
         >
           © {year} Madsen Made Welding and Fabrication. All rights reserved.
         </Typography>

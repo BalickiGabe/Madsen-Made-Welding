@@ -85,7 +85,7 @@ export default function Testimonial() {
                 >
                   <Typography
                     variant="body1"
-                    sx={{ fontSize: { sm: "2rem", lg: "1.5rem" } }}
+                    sx={{ fontSize: { sm: "2.5rem", lg: "1.5rem" } }}
                   >
                     {testimonial.text}
                   </Typography>

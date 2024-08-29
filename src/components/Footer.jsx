@@ -31,7 +31,7 @@ export default function Footer() {
           <Typography
             variant="body1"
             sx={{
-              marginLeft: { sm: "1rem", lg: "3rem" },
+              marginLeft: { sm: "3rem", lg: "3rem" },
               fontSize: { sm: "2rem", lg: "1.5rem" },
             }}
           >
@@ -40,7 +40,7 @@ export default function Footer() {
           <Typography
             variant="body1"
             sx={{
-              marginLeft: { sm: "1rem", lg: "3rem" },
+              marginLeft: { sm: "3rem", lg: "3rem" },
               fontSize: { sm: "2rem", lg: "1.5rem" },
             }}
           >
@@ -49,7 +49,7 @@ export default function Footer() {
           <Typography
             variant="body1"
             sx={{
-              marginLeft: { sm: "1rem", lg: "3rem" },
+              marginLeft: { sm: "3rem", lg: "3rem" },
               fontSize: { sm: "2rem", lg: "1.5rem" },
             }}
           >
@@ -58,7 +58,7 @@ export default function Footer() {
           <Typography
             variant="body1"
             sx={{
-              marginLeft: { sm: "1rem", lg: "3rem" },
+              marginLeft: { sm: "3rem", lg: "3rem" },
               fontSize: { sm: "2rem", lg: "1.5rem" },
             }}
           >

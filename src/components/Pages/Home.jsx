@@ -17,3 +17,4 @@ export default function Home() {
     </Box>
   );
 }
+//removed testimonials bc of margin bug. NEED TO FIX

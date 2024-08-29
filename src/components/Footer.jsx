@@ -96,7 +96,7 @@ export default function Footer() {
               href="https://www.thumbtack.com/co/denver/metal-fabricators/madsen-made-welding-fabrication/service/463516994295357449?utm_medium=web&utm_source=txt&surface=sp&referrer_pk=411268096510590985"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ ontSize: { sm: "5rem", lg: "4rem" } }}
+              sx={{ fontSize: { sm: "3rem", lg: "2.5rem" } }}
             >
               Thumbtack
             </Button>

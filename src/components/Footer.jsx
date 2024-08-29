@@ -81,7 +81,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FacebookIcon sx={{ ontSize: { sm: "5rem", lg: "4rem" } }} />
+              <FacebookIcon sx={{ fontSize: { sm: "5rem", lg: "4rem" } }} />
             </Button>
             <Button
               color="primary"

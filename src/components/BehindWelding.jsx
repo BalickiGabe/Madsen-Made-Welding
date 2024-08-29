@@ -30,9 +30,9 @@ export default function BehindWelding() {
             backgroundImage: `url(${imageUrl})`,
             flex: 1,
             backgroundRepeat: "no-repeat",
-            height: { sm: "20rem", lg: "27rem" },
+            height: { sm: "40rem", lg: "27rem" },
 
-            width: { sm: "27rem", lg: "34rem" },
+            width: { sm: "45rem", lg: "34rem" },
             backgroundSize: "cover",
             backgroundPosition: "center",
             marginTop: "8rem",

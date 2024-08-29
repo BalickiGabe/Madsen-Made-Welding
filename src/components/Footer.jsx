@@ -31,8 +31,8 @@ export default function Footer() {
           <Typography
             variant="body1"
             sx={{
-              marginLeft: "3rem",
-              fontSize: { sm: "2.5rem", lg: "1.5rem" },
+              marginLeft: { sm: "1rem", lg: "3rem" },
+              fontSize: { sm: "2rem", lg: "1.5rem" },
             }}
           >
             madsenmadellc@gmail.com
@@ -40,8 +40,8 @@ export default function Footer() {
           <Typography
             variant="body1"
             sx={{
-              marginLeft: "3rem",
-              fontSize: { sm: "2.5rem", lg: "1.5rem" },
+              marginLeft: { sm: "1rem", lg: "3rem" },
+              fontSize: { sm: "2rem", lg: "1.5rem" },
             }}
           >
             Jake: (720) 281-4879
@@ -49,8 +49,8 @@ export default function Footer() {
           <Typography
             variant="body1"
             sx={{
-              marginLeft: "3rem",
-              fontSize: { sm: "2.5rem", lg: "1.5rem" },
+              marginLeft: { sm: "1rem", lg: "3rem" },
+              fontSize: { sm: "2rem", lg: "1.5rem" },
             }}
           >
             Alex: (303) 653-3864
@@ -58,8 +58,8 @@ export default function Footer() {
           <Typography
             variant="body1"
             sx={{
-              marginLeft: "3rem",
-              fontSize: { sm: "2.5rem", lg: "1.5rem" },
+              marginLeft: { sm: "1rem", lg: "3rem" },
+              fontSize: { sm: "2rem", lg: "1.5rem" },
             }}
           >
             Denver, Colorado
@@ -81,7 +81,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FacebookIcon sx={{ fontSize: { sm: "5rem", lg: "4rem" } }} />
+              <FacebookIcon sx={{ fontSize: { sm: "3rem", lg: "4rem" } }} />
             </Button>
             <Button
               color="primary"
@@ -89,14 +89,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <InstagramIcon sx={{ fontSize: { sm: "5rem", lg: "4rem" } }} />
+              <InstagramIcon sx={{ fontSize: { sm: "3rem", lg: "4rem" } }} />
             </Button>
             <Button
               color="primary"
               href="https://www.thumbtack.com/co/denver/metal-fabricators/madsen-made-welding-fabrication/service/463516994295357449?utm_medium=web&utm_source=txt&surface=sp&referrer_pk=411268096510590985"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ fontSize: { sm: "3rem", lg: "2.5rem" } }}
+              sx={{ fontSize: { sm: "2rem", lg: "2.5rem" } }}
             >
               Thumbtack
             </Button>

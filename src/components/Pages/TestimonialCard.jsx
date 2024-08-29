@@ -21,7 +21,7 @@ export default function TestimonialCard({ text, reviewer }) {
         sx={{
           marginBottom: "0.5rem",
           fontStyle: "italic",
-          fontSize: { sm: "1rem" },
+          fontSize: { sm: "2.5rem", lg: "1.5rem" },
           marginLeft: { sm: "0rem", lg: "10rem" },
           marginRight: { sm: "0rem", lg: "10rem" },
         }}
@@ -33,7 +33,7 @@ export default function TestimonialCard({ text, reviewer }) {
         sx={{
           fontWeight: "bold",
           marginTop: "1rem",
-          fontSize: { sm: "2rem", lg: "1rem" },
+          fontSize: { sm: "2.5rem", lg: "1.5rem" },
         }}
       >
         {reviewer}

@@ -69,9 +69,9 @@ export default function Services() {
             variant="h4"
             gutterBottom
             sx={{
-              color: "black",
-              borderBottom: "1px solid black",
-              fontSize: { sm: "2.5rem", lg: "3rem" },
+              color: "white",
+              borderBottom: "1px solid white",
+              fontSize: { sm: "3rem", lg: "3rem" },
             }}
           >
             Residential
@@ -80,9 +80,9 @@ export default function Services() {
             variant="body1"
             gutterBottom
             sx={{
-              color: "black",
+              color: "white",
 
-              fontSize: { xs: "1.7rem", sm: "1.7rem", lg: "1.5rem" },
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
               marginTop: "3rem",
             }}
           >
@@ -148,9 +148,9 @@ export default function Services() {
             variant="h4"
             gutterBottom
             sx={{
-              color: "black",
-              borderBottom: "1px solid black",
-              fontSize: { sm: "2.5rem", lg: "3rem" },
+              color: "white",
+              borderBottom: "1px solid white",
+              fontSize: { sm: "3rem", lg: "3rem" },
             }}
           >
             Commercial Railings and Welding Services
@@ -159,9 +159,9 @@ export default function Services() {
             variant="body1"
             gutterBottom
             sx={{
-              color: "black",
+              color: "white",
 
-              fontSize: { xs: "1.7rem", sm: "1.7rem", lg: "1.5rem" },
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
               marginTop: "3rem",
             }}
           >
@@ -229,9 +229,9 @@ export default function Services() {
             variant="h4"
             gutterBottom
             sx={{
-              color: "black",
-              borderBottom: "1px solid black",
-              fontSize: { sm: "2.5rem", lg: "3rem" },
+              color: "white",
+              borderBottom: "1px solid white",
+              fontSize: { sm: "3rem", lg: "3rem" },
             }}
           >
             Repairs and Custom Requests
@@ -240,9 +240,9 @@ export default function Services() {
             variant="body1"
             gutterBottom
             sx={{
-              color: "black",
+              color: "white",
 
-              fontSize: { xs: "1.7rem", sm: "1.7rem", lg: "1.5rem" },
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
               marginTop: "3rem",
             }}
           >
@@ -277,7 +277,11 @@ export default function Services() {
       >
         <Typography
           variant="h2"
-          sx={{ marginLeft: "2rem", textAlign: "Center" }}
+          sx={{
+            marginLeft: "2rem",
+            textAlign: "Center",
+            fontSize: { sm: "3rem", lg: "3rem" },
+          }}
         >
           Other services offered
         </Typography>
@@ -313,7 +317,10 @@ export default function Services() {
             "Aluminum Welding",
             "and more!",
           ].map((city) => (
-            <ListItem key={city} sx={{ padding: 0 }}>
+            <ListItem
+              key={city}
+              sx={{ padding: 0, fontSize: { sm: "2.5rem", lg: "1.5rem" } }}
+            >
               <ListItemText primary={city} />
             </ListItem>
           ))}
@@ -344,13 +351,13 @@ export default function Services() {
               backgroundImage: `url(${imageUrl})`,
               flex: 1,
               backgroundRepeat: "no-repeat",
-              height: { sm: "20rem", lg: "27rem" },
+              height: { sm: "45rem", lg: "27rem" },
               borderRadius: "5%",
-              width: { sm: "27rem", lg: "34rem" },
+              width: { sm: "52rem", lg: "34rem" },
               boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.3)",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              marginTop: "3rem",
+              marginTop: "8rem",
               paddingTop: "8rem",
             }}
           />
@@ -364,17 +371,29 @@ export default function Services() {
             color: "black",
           }}
         >
-          <Typography variant="h2" gutterBottom sx={{ color: "black" }}>
+          <Typography
+            variant="h2"
+            gutterBottom
+            sx={{ color: "black", fontSize: { sm: "3rem", lg: "3rem" } }}
+          >
             We are proud to serve the Colorado Front Range
           </Typography>
           <Typography
             variant="h3"
             gutterBottom
-            sx={{ color: "black", borderBottom: "1px solid #ccc" }}
+            sx={{
+              color: "black",
+              borderBottom: "1px solid #ccc",
+              fontSize: { sm: "2.5rem", lg: "2.5rem" },
+            }}
           >
             From Boulder to Castle Rock and everywhere in between
           </Typography>
-          <Typography variant="h3" gutterBottom sx={{ color: "black" }}>
+          <Typography
+            variant="h3"
+            gutterBottom
+            sx={{ color: "black", fontSize: { sm: "2.5rem", lg: "2.5rem" } }}
+          >
             Cities and Towns We Serve
           </Typography>
           <Box
@@ -410,7 +429,10 @@ export default function Services() {
               "Lakewood",
               "Morrison",
             ].map((city) => (
-              <ListItem key={city} sx={{ padding: 0 }}>
+              <ListItem
+                key={city}
+                sx={{ padding: 0, fontSize: { sm: "2.5rem", lg: "1.5rem" } }}
+              >
                 <ListItemText primary={city} />
               </ListItem>
             ))}

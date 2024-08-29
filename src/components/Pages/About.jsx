@@ -114,7 +114,7 @@ export default function About() {
             boxShadow: "none",
           }}
         >
-          <CardMedia component="img" height="700rem" image={Jake} />
+          <CardMedia component="img" height="900rem" image={Jake} />
           <CardContent>
             <Typography
               variant="body1"
@@ -143,7 +143,7 @@ export default function About() {
             boxShadow: "none",
           }}
         >
-          <CardMedia component="img" height="700rem" image={Alex} />
+          <CardMedia component="img" height="900rem" image={Alex} />
           <CardContent>
             <Typography
               variant="body1"
@@ -165,33 +165,6 @@ export default function About() {
           </CardContent>
         </Card>
 
-        {/* <Card
-          sx={{
-            marginBottom: ".8rem",
-            maxWidth: "50rem",
-            border: "none",
-            boxShadow: "none",
-          }}
-        >
-          <CardMedia component="img" height="700rem" image={Brian} />
-          <CardContent>
-            <Typography
-              variant="body1"
-              color="Black"
-              sx={{
-                marginLeft: "2rem",
-                marginBottom: "3rem",
-                marginRight: "2rem",
-              }}
-            >
-              Brian Tanner is the apprentice and shop fabricator at Madsen Made
-              Welding & Fabrication. He enjoys fishing and has a passion for
-              building things. Brian is dedicated to honing his craft and
-              contributing to the team's success.
-            </Typography>
-          </CardContent>
-        </Card> */}
-
         <Card
           sx={{
             marginBottom: ".8rem",
@@ -200,7 +173,7 @@ export default function About() {
             boxShadow: "none",
           }}
         >
-          <CardMedia component="img" height="700rem" image={Louie} />
+          <CardMedia component="img" height="900rem" image={Louie} />
           <CardContent>
             <Typography
               variant="body1"

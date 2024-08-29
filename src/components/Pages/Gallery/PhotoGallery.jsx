@@ -8,7 +8,7 @@ export default function PhotoGallery({ photos }) {
         display: "grid",
         gridTemplateColumns: {
           xs: "1fr",
-          sm: "1fr 1fr",
+          sm: "1fr",
           md: "1fr 1fr 1fr",
         },
         gap: "1rem",
@@ -24,9 +24,14 @@ export default function PhotoGallery({ photos }) {
           sx={{
             width: "100%",
             height: 0,
-            paddingBottom: "75%", // Adjust this to control the aspect ratio
+            paddingBottom: "75%",
             overflow: "hidden",
             position: "relative",
+            gridColumn: {
+              xs: "span 1",
+              sm: "span 1",
+              md: "span 1",
+            },
           }}
         >
           <img

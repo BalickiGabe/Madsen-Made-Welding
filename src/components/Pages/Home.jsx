@@ -3,7 +3,7 @@ import Header from "../Header";
 import { Box } from "@mui/material";
 import AboutHome from "../AboutHome";
 import Footer from "../Footer";
-import Testimonial from "../Testimonials";
+// import Testimonial from "../Testimonials";
 import BehindWelding from "../BehindWelding";
 
 export default function Home() {

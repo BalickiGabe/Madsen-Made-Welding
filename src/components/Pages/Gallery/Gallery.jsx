@@ -47,7 +47,7 @@ export default function Gallery() {
             gutterBottom
             sx={{
               color: "white",
-              fontSize: { sm: "15px", lg: "1.7rem" },
+              fontSize: { sm: "2.5rem", lg: "1.5rem" },
               marginTop: "3rem",
             }}
           >
